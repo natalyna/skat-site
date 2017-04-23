@@ -1,0 +1,3 @@
+// importFont($fontname, $filename, $svgLabel, $isBold: false, $isItalic: false) 
+@include importFont($fontName-SuisseIntlRegular, $pathToRegular + $filename-SuisseIntlRegular, $svgLabel-SuisseIntlRegular);
+@include importFont($fontName-SuisseIntlSemiBold, $pathToSemiBold + $filename-SuisseIntlSemiBold, $svgLabel-SuisseIntlSemiBold);
