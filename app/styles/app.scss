@@ -1,4 +1,18 @@
+// Customize Bootstrap variables
+
+// Colors:
+$gray-dark: #35353d;
+$brand-primary: #0247bc;
+// Scaffolding:
+$link-hover-color: #0f2984;
+$link-hover-decoration: none;
+// Typography:
+
+// Buttons:
+$btn-primary-bg: #041f7a;
 @import "bootstrap";
+
+
 @import "vendor/__vendor.scss";
 @import "utils/__utils.scss";
 @import "components/__components.scss";
