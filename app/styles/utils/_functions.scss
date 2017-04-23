@@ -1,0 +1,13 @@
+@function calcPercent($target, $container) {
+	@return ($target / $container) * 100%;
+}
+
+@function get-vh($target, $context) {
+    $vw-context: $context * .01;
+    @return #{$target/$vw-context}vh;
+}
+
+@function get-vw($target, $context) {
+	$vw-context: $context * .01;
+	@return #{$target/$vw-context}vw;
+}
