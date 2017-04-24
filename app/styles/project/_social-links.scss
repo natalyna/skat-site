@@ -1,0 +1,47 @@
+.social {
+	&-links {
+
+	}
+
+	&-link {
+		display: inline-block;
+		width: 44px;
+		height: 44px;
+		margin-right: 6px;
+		background-repeat: no-repeat;
+		background-position: 100%;
+		background-size: 100%;
+
+		&_fb {
+			background-image: url($path-images + $path-icon-fb);
+
+			&:hover {
+				background-image: url($path-images + $path-iconHover-fb);
+			}
+		}
+
+		&_vk {
+			background-image: url($path-images + $path-icon-vk);
+
+			&:hover {
+				background-image: url($path-images + $path-iconHover-vk);
+			}
+		}
+
+		&_ok {
+			background-image: url($path-images + $path-icon-ok);
+
+			&:hover {
+				background-image: url($path-images + $path-iconHover-ok);
+			}
+		}
+
+		&_in {
+			background-image: url($path-images + $path-icon-in);
+
+			&:hover {
+				background-image: url($path-images + $path-iconHover-in);
+			}
+		}
+	}
+}
