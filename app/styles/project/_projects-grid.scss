@@ -1,0 +1,57 @@
+.projects {
+	&-grid {
+		padding: 35px 40px;
+	}
+
+	&-item {
+
+	}
+}
+
+.project {
+	height: 360px;
+	position: relative;
+	color: #fff;
+
+	&-image {
+
+	}
+
+	&-info {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 25px;
+		padding-top: 5px;
+		background: rgba(0, 0, 0, 0.25);
+
+		&:hover {
+			background: rgba(0, 0, 0, 0.5);
+			cursor: pointer;
+		}
+	}
+
+	&-header {
+
+	}
+
+	&-description {
+
+	}
+
+	&-expiration {
+
+	}
+
+	&-address {
+
+		&-pin {
+			display: inline-block;
+			height: 14px;
+			width: 14px;
+			background: url(/assets/images/icon-mappin-white.svg) no-repeat center;
+		}
+	}
+}

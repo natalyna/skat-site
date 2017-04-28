@@ -8,8 +8,16 @@ $link-hover-color: #0f2984;
 $link-hover-decoration: none;
 // Typography:
 
+// Components:
+$padding-base-horizontal: 40px;
+
 // Buttons:
-$btn-primary-bg: #041f7a;
+$btn-primary-bg: $brand-primary;
+$btn-default-border: $brand-primary;
+$btn-default-color: $brand-primary;
+
+// Carousel:
+$carousel-control-width: 10%;
 @import "bootstrap";
 
 

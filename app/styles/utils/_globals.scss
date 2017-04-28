@@ -10,3 +10,15 @@ img {
 small {
 	font-size: 12px;
 }
+
+.btn_centered {
+	display: block;
+	margin: 0 auto;
+}
+
+.btn-default {
+	&:hover {
+		border-color: transparent;
+		background: #fff;
+	}
+}
