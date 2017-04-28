@@ -1,5 +1,5 @@
 .carousel {
-	&-ctrl {
+	&__ctrl {
 		display: inline-block;
 		height: 100%;
 		width: 25px;
@@ -12,5 +12,42 @@
 		&_right {
 
 		}
+	}
+
+	&__content {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 20;
+		padding: 9% 15%;
+		color: #fff;
+		background: rgba(0, 0, 0, .25);
+	}
+
+	&__title {
+
+	}
+
+	&__text {
+		font-size: 18px;
+		padding-right: 37%;
+		margin-top: 20px;
+	}
+
+	&__footer {
+		position: absolute;
+		left: 15%;
+		bottom: 15%;
+	}
+
+	&__sub-text {
+		margin-bottom: 30px;
+	}
+
+	&__btn {
+		background-color: transparent;
+		border-color: #fff;
 	}
 }

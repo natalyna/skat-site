@@ -11,6 +11,10 @@ small {
 	font-size: 12px;
 }
 
+p {
+	margin-bottom: 5px;
+}
+
 .btn_centered {
 	display: block;
 	margin: 0 auto;
@@ -25,4 +29,9 @@ small {
 
 .badge_action {
 	background: #5e26a1;
+}
+
+.btn {
+	padding-left: 40px;
+	padding-right: 40px;
 }
