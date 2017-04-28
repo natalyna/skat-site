@@ -1,0 +1,64 @@
+.news {
+	&-grid {
+		padding: 35px 40px;
+	}
+
+	&-item {
+		position: relative;
+		display: block;
+		height: 200px;
+		padding: 20px;
+		padding-right: 30px;
+		color: $gray-dark;
+		background-color: #f6f6f6;
+
+		&:hover {
+			background-color: $brand-primary;
+			color: #fff;
+		}
+
+		&-header {
+			margin-bottom: 30px;
+		}
+
+		&-icon {
+			display: inline-block;
+			height: 18px;
+			width: 18px;
+			background: url($path-images + "icon-clock.svg") no-repeat center;
+			margin-right: 6px;
+		}
+
+		&-date {
+			vertical-align: top;
+			line-height: 20px;
+		}
+
+		&-footer {
+			position: absolute;
+			bottom: 20px;
+			left: 20px;
+		}
+
+		// with image 
+		&-image,
+		&-layout {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+		}
+
+		&-layout {
+			padding: 20px;
+			padding-right: 30px;
+			background: rgba(0, 0, 0, 0.25);
+			color: #fff;
+
+			&:hover {
+				background: rgba(0, 0, 0, .5);
+			}
+		}
+
+	}
+}

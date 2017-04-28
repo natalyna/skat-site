@@ -26,6 +26,7 @@
 		padding: 25px;
 		padding-top: 5px;
 		background: rgba(0, 0, 0, 0.25);
+		font-size: 12px;
 
 		&:hover {
 			background: rgba(0, 0, 0, 0.5);
@@ -41,8 +42,13 @@
 
 	}
 
-	&-expiration {
+	&-footer {
+		position: absolute;
+		bottom: 35px;
+	}
 
+	&-expiration {
+		margin-bottom: 7px;
 	}
 
 	&-address {
@@ -51,7 +57,7 @@
 			display: inline-block;
 			height: 14px;
 			width: 14px;
-			background: url(/assets/images/icon-mappin-white.svg) no-repeat center;
+			background: url($path-images + "icon-mappin-white.svg") no-repeat center;
 		}
 	}
 }
