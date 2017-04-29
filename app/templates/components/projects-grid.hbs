@@ -1,34 +1,20 @@
 <div class="row">
-    <div class="col-md-6">
-        <div class="project">
-            <img src="/assets/images/atlantida.jpg" alt="Атлантида" class="project-image">
-            <div class="project-info">
-                <h2 class="project-header">Атлантида</h2>
-                <div class="project-description">Жилой комплекс</div>
-                <div class="project-footer">
-                    <div class="project-expiration">Срок сдачи: апрель 2018 г.</div>
-                    <div class="project-address">
-                        <span class="project-address-pin"></span>
-                        <span>Октябрьский проспект 44, корпус 2</span>
+    {{#each projects as |project| }}
+        <div class="col-md-6">
+            <div class="project">
+                <img src="{{project.imgSrc}}" alt="{{project.imgAlt}}" class="project-image">
+                <div class="project-info">
+                    <h2 class="project-header">{{project.name}}</h2>
+                    <div class="project-description">{{project.description}}</div>
+                    <div class="project-footer">
+                        <div class="project-expiration">Срок сдачи: {{moment-format project.expiration 'MMMM YYYY' 'DD.MM.YYYY'}}</div>
+                        <div class="project-address">
+                            <span class="project-address-pin"></span>
+                            <span>{{project.address}}</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="col-md-6">
-        <div class="project">
-            <img src="/assets/images/rosha.jpg" alt="Русская роща" class="project-image">
-            <div class="project-info">
-                <h2 class="project-header">Русская роща</h2>
-                <div class="project-description">Жилой комплекс</div>
-                <div class="project-footer">
-                    <div class="project-expiration">Срок сдачи: апрель 2018 г.</div>
-                    <div class="project-address">
-                        <span class="project-address-pin"></span>
-                        <span>Октябрьский проспект 44, корпус 2</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    {{/each}}
 </div>

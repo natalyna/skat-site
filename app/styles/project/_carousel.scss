@@ -1,5 +1,5 @@
 .carousel {
-	height: $width-carousel;
+	height: $height-carousel;
 
 	&__ctrl {
 		display: inline-block;
@@ -17,7 +17,7 @@
 	}
 
 	&__image {
-		min-height: $width-carousel;
+		min-height: $height-carousel;
 	}
 
 	&__content {
