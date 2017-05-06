@@ -17,39 +17,31 @@
 			color: #fff;
 		}
 
-		&-header {
+		&__header {
 			margin-bottom: 30px;
 		}
 
-		&-icon {
-			display: inline-block;
-			height: 18px;
-			width: 18px;
-			background: url($path-images + "icon-clock.svg") no-repeat center;
-			margin-right: 6px;
-		}
-
-		&-date {
+		&__date {
 			vertical-align: top;
 			line-height: 20px;
 		}
 
-		&-footer {
+		&__footer {
 			position: absolute;
 			bottom: 20px;
 			left: 20px;
 		}
 
 		// with image 
-		&-image,
-		&-layout {
+		&__image,
+		&__layout {
 			position: absolute;
 			top: 0;
 			left: 0;
 			height: 100%;
 		}
 
-		&-layout {
+		&__layout {
 			padding: 20px;
 			padding-right: 30px;
 			background: rgba(0, 0, 0, 0.25);

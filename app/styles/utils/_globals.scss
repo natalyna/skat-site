@@ -35,3 +35,12 @@ p {
 	padding-left: 40px;
 	padding-right: 40px;
 }
+
+.clock-icon {
+	display: inline-block;
+	height: 18px;
+	width: 18px;
+	background: url($path-images + "icon-clock.svg") no-repeat center;
+	vertical-align: top;
+	margin-right: 6px;
+}

@@ -1,20 +1,20 @@
 <div class="row">
     {{#each projects as |project| }}
         <div class="col-md-6">
-            <div class="project">
-                <img src="{{project.imgSrc}}" alt="{{project.imgAlt}}" class="project-image">
-                <div class="project-info">
-                    <h2 class="project-header">{{project.name}}</h2>
-                    <div class="project-description">{{project.description}}</div>
-                    <div class="project-footer">
-                        <div class="project-expiration">Срок сдачи: {{moment-format project.expiration 'MMMM YYYY' 'DD.MM.YYYY'}}</div>
-                        <div class="project-address">
-                            <span class="project-address-pin"></span>
+            {{#link-to 'projects.show' project.id class="projects-item" }}
+                <img src="{{project.imgSrc}}" alt="{{project.name}}" class="projects-item__image">
+                <div class="projects-item__info">
+                    <h2 class="projects-item__header">{{project.name}}</h2>
+                    <div class="projects-item__description">{{project.type}}</div>
+                    <div class="projects-item__footer">
+                        <div class="projects-item__expiration">Срок сдачи: {{moment-format project.expiration 'MMMM YYYY' 'DD.MM.YYYY'}}</div>
+                        <div class="projects-item__address">
+                            <span class="projects-item__address-pin"></span>
                             <span>{{project.address}}</span>
                         </div>
                     </div>
                 </div>
-            </div>
+            {{/link-to}}
         </div>
     {{/each}}
 </div>

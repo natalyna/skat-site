@@ -1,7 +1,13 @@
 .header {
-	position: relative;
 	height: 95px;
+	margin-bottom: 80px;
 	font-family: $fontName-SuisseIntlSemiBold, Arial, sans-serif;
+	@include box-shadow($shadow-header);
+
+	&__container {
+		position: relative;
+		height: 100%;
+	}
 
 	&__logo {
 		display: block;
