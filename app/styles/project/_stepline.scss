@@ -1,0 +1,28 @@
+.stepline {
+
+	&__item {
+		position: relative;
+		padding: 25px;
+		padding-bottom: 60px;
+		padding-top: 0;
+		border-left: 2px solid #67b2e9;
+
+		&:last-of-type {
+			border-left: none;
+		}
+	}
+
+	&__circle {
+		position: absolute;
+		top: -1px;
+		left: -9px;
+		height: 16px;
+		width: 16px;
+		background-color: #67b2e9;
+		@include rounded(50%);
+	}
+
+	&__title {
+		font-family: $fontName-SuisseIntlSemiBold, Arial, sans-serif;
+	}
+}

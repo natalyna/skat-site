@@ -1,0 +1,14 @@
+.buy-process {
+	&__header,
+	&__introduction {
+		font-family: $fontName-SuisseIntlSemiBold;
+	}
+
+	&__introduction {
+		font-size: 20px;
+	}
+
+	&__stepline {
+		margin-top: 50px;
+	}
+}

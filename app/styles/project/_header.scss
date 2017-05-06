@@ -35,5 +35,9 @@
 		&:last-of-type {
 			margin-right: 0;
 		}
+
+		&.active {
+			color: $link-hover-color;
+		}
 	}
 }
