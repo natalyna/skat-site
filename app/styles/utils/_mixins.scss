@@ -410,3 +410,8 @@
         #{$prop}: $value-vw;
     }
 }
+
+@mixin size($w, $h) {
+    width: $w;
+    height: $h;
+}

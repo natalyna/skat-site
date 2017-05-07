@@ -1,0 +1,100 @@
+.mortgage {
+
+	&__title {
+		margin-bottom: 45px;
+		font-family: $fontName-SuisseIntlSemiBold, Arial, sans-serif;
+	}
+
+	&__text {
+		margin-bottom: 35px;
+		font-size: 16px;
+	}
+
+	&__cols {
+		margin-top: 150px;
+		margin-bottom: 50px;
+		text-align: center;
+
+		&_pos {
+			&_first {
+				padding: 0 35px;
+			}
+
+			&_middle {
+				padding: 0 70px;
+			}
+
+			&_last {
+				padding: 0 25px;
+			}
+		}
+	}
+
+	&__banks {
+		background-color: #cfd3d4;
+		padding: 100px 0 70px 0;
+		margin-bottom: 70px;
+	}
+
+	&__bank {
+		background-color: #fff;
+		padding: 30px;
+		padding-right: 80px;
+		margin-bottom: 30px;
+
+		&:hover {
+			cursor: pointer;
+			@include box-shadow($shadow-mortageBank);
+		}
+
+		&-logo {
+			margin-bottom: 80px;
+			@include size(240px, 50px);
+		}
+
+		&-conditions {
+			font-size: 0;
+		}
+
+		&-condition {
+			display: inline-block;
+			width: 100% / 3;
+			padding-right: 50px;
+
+			&:last-of-type {
+				padding-right: 0;
+			}
+		}
+
+		&-numbers {
+			font-size: 20px;
+		}
+	}
+
+	&__law {
+		font-family: $fontName-SuisseIntlSemiBold, Arial, sans-serif;
+
+		&-link {
+			display: block;
+			margin-top: 35px;
+
+			&:last-of-type {
+				margin-bottom: 110px;
+			}
+		}
+
+		&-icon {
+			display: inline-block;
+			margin-right: 16px;
+			background: url($path-images + $path-pdf-lines) no-repeat center;
+			@include size(46px, 54px);
+		}
+
+		&-name {
+			display: inline-block;
+			height: 100%;
+			vertical-align: top;
+			padding-top: 7px;
+		}
+	}
+}

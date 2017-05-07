@@ -12,6 +12,7 @@ Router.map(function() {
   });
   this.route('buy', function() {
     this.route('process');
+    this.route('mortgage');
   });
   this.route('company');
   this.route('news');
