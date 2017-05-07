@@ -1,0 +1,29 @@
+.capital {
+
+	&__title,
+	&__introduction,
+	&__subtitle {
+		font-family: $fontName-SuisseIntlSemiBold, Arial, sans-serif;
+	}
+
+	&__title {
+		margin-bottom: 35px;
+	}
+
+	&__introduction {
+		margin-bottom: 45px;
+		line-height: $line-height-base;
+	}
+
+	&__subtitle {
+		margin-bottom: 30px;
+	}
+
+	&__list {
+		padding-left: 15px;
+	}
+
+	&__text {
+		margin-bottom: 35px;
+	}
+}

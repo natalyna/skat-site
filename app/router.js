@@ -14,6 +14,7 @@ Router.map(function() {
     this.route('process');
     this.route('mortgage');
     this.route('trade-in');
+    this.route('capital');
   });
   this.route('company');
   this.route('news');
