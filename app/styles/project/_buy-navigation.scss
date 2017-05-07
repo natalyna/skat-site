@@ -1,29 +1,6 @@
+@include navigation(".buy-navigation");
+
 .buy-navigation {
 	margin-top: -80px;
 	margin-bottom: 90px;
-	@include box-shadow($shadow-header);
-
-	&__image {
-		height: 330px;
-		background-color: #f2f2f2;
-	}
-
-	&__nav {
-		display: table;
-		border-spacing: 25px 0;
-		height: 90px;
-		margin: 0 auto;
-		font-family: $fontName-SuisseIntlSemiBold, Arial, sans-serif;
-
-		&-link {
-			display: table-cell;
-			vertical-align: middle;
-			height: 100%;
-
-			&.active {
-				color: $link-hover-color;
-				border-bottom: 4px solid $link-hover-color;
-			}
-		}
-	}
 }

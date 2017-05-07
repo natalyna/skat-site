@@ -17,7 +17,9 @@ Router.map(function() {
     this.route('capital');
     this.route('compensation');
   });
-  this.route('company');
+  this.route('company', function() {
+
+  });
   this.route('news');
   this.route('contacts');
 });

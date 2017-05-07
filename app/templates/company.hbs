@@ -1,1 +1,14 @@
-<h1>Компания</h1> {{outlet}}
+<div class="company-navigation">
+    <div class="company-navigation__image">
+        <img src="#" alt="">
+    </div>
+    <div class="container">
+        <nav class="company-navigation__nav">
+            {{#link-to "company.index" class="company-navigation__nav-link" }}Компания{{/link-to}}
+            {{#link-to "buy.mortgage" class="company-navigation__nav-link" }}Команда{{/link-to}}
+            {{#link-to "buy.trade-in" class="company-navigation__nav-link" }}История{{/link-to}}
+            {{#link-to "buy.capital" class="company-navigation__nav-link" }}Услуги{{/link-to}}
+        </nav>
+    </div>
+</div>
+{{outlet}}

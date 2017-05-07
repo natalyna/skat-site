@@ -1,0 +1,47 @@
+@mixin navigation($selector, $defaultSkin: true) {
+	#{$selector} {
+
+		&__image {
+			height: 330px;
+		}
+
+		&__nav {
+			display: table;
+			border-spacing: 25px 0;
+			height: 90px;
+			margin: 0 auto;
+
+			&-link {
+				display: table-cell;
+				vertical-align: middle;
+				height: 100%;
+			}
+		}
+	}
+
+	@if $defaultSkin !=false {
+        @include navigation-skin-default($selector);
+    }
+}
+
+@mixin navigation-skin-default($selector) {
+	#{$selector} {
+		@include box-shadow($shadow-header);
+
+		&__image {
+			background-color: #f2f2f2;
+		}
+
+		&__nav {
+			font-family: $fontName-SuisseIntlSemiBold, Arial, sans-serif;
+
+			&-link {
+
+				&.active {
+					color: $link-hover-color;
+					border-bottom: 4px solid $link-hover-color;
+				}
+			}
+		}
+	}
+}
