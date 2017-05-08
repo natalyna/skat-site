@@ -22,7 +22,7 @@
 		@include size(20px);
 
 		&_close {
-			@include rotation(45deg);
+			background: url($path-images + $path-plus) no-repeat center;
 		}
 	}
 
