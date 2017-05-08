@@ -1,0 +1,32 @@
+.team-member {
+	margin-top: 50px;
+
+	&__image {
+		@include size(370px, 370px);
+		background-color: #fafafa;
+	}
+
+	&__name {
+		margin-top: 20px;
+		font-family: $fontName-SuisseIntlSemiBold, Arial, sans-serif;
+	}
+
+	&__position {
+
+	}
+
+	&__expand {
+		margin: 20px 0;
+		cursor: pointer;
+		background: url($path-images + $path-cross) no-repeat center;
+		@include size(20px);
+
+		&_close {
+			@include rotation(45deg);
+		}
+	}
+
+	&__info {
+		display: none;
+	}
+}

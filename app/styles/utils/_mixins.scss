@@ -411,7 +411,7 @@
     }
 }
 
-@mixin size($w, $h) {
+@mixin size($w, $h: $w) {
     width: $w;
     height: $h;
 }
