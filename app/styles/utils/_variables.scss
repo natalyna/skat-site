@@ -31,3 +31,9 @@ $shadow-header: 0 4px 4px -2px rgba(0, 0, 0, 0.1);
 $shadow-mortageBank: 0 0 20px 2px rgba(0, 0, 0, 0.25);
 
 $color-companyCols: $brand-primary;
+$bgColor-constructionDynamicsCell-1: $brand-primary;
+$bgColor-constructionDynamicsCell-2: #2661c5;
+$bgColor-constructionDynamicsCell-3: #4c7fd0;
+$bgColor-constructionDynamicsCell-4: #739adb;
+$bgColor-constructionDynamicsCell-5: #99b5e4;
+$bgColor-constructionDynamicsCell: ($bgColor-constructionDynamicsCell-1, $bgColor-constructionDynamicsCell-2, $bgColor-constructionDynamicsCell-3, $bgColor-constructionDynamicsCell-4, $bgColor-constructionDynamicsCell-5);

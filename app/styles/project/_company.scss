@@ -1,8 +1,4 @@
 .company {
-	&__title,
-	&__introduction {
-		font-family: $fontName-SuisseIntlSemiBold, Arial, sans-serif;
-	}
 
 	&__title {
 		margin-bottom: 40px;
@@ -33,6 +29,14 @@
 
 		&-numbers {
 			font-size: 50px;
+		}
+	}
+
+	&__partners {
+		margin-top: 60px;
+		&-logo {
+			@include size(135px, 30px);
+			margin-bottom: 100px;
 		}
 	}
 }
