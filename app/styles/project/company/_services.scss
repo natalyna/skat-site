@@ -1,4 +1,8 @@
-.history {
+@include document-link(".services__item-document");
+
+.services {
+	margin-bottom: 70px;
+	
 	&__title {
 		margin-bottom: 40px;
 	}
@@ -8,7 +12,34 @@
 		margin-bottom: 50px;
 	}
 
-	&__stepline {
+	&__item {
+		display: table;
+		margin-bottom: 30px;
 
+		&-image,
+		&-info {
+			display: table-cell;
+			vertical-align: top;
+		}
+
+		&-image {
+			background-color: #fafafa;
+			@include size(570px, 300px);
+		}
+
+		&-info {
+			position: relative;
+			padding: 25px 0 30px 30px;
+		}
+
+		&-title {
+			margin-bottom: 25px;
+		}
+
+		&-document {
+			position: absolute;
+			left: 30px;
+			bottom: 30px;
+		}
 	}
 }

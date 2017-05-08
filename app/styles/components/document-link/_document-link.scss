@@ -1,0 +1,36 @@
+@mixin document-link($selector, $defaultSkin: true) {
+	#{$selector} {
+		display: table;
+		width: 100%;
+
+		&-icon,
+		&-name {
+			display: table-cell;
+		}
+
+		&-icon {
+			@include size(50px, 54px);
+		}
+
+		&-name {
+			height: 100%;
+			padding-left: 16px;
+		}
+	}
+
+	@if $defaultSkin !=false {
+        @include document-link-skin-default($selector);
+    }
+}
+
+@mixin document-link-skin-default($selector) {
+	#{$selector} {
+		&-icon {
+			background: url($path-images + $path-pdf-lines) no-repeat center;
+		}
+
+		&-name {
+			vertical-align: middle;
+		}
+	}
+}

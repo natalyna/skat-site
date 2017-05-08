@@ -19,6 +19,27 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $fontName-SuisseIntlSemiBold, Arial, sans-serif;
 }
 
+ol,
+ul {
+	padding-left: 15px;
+
+	> li {
+		> ul {
+			list-style-type: none;
+			padding-left: 0;
+
+			> li {
+				text-indent: 1px;
+
+				&:before {
+					content: "—";
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+}
+
 .btn_centered {
 	display: block;
 	margin: 0 auto;

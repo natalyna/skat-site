@@ -1,3 +1,5 @@
+@include document-link(".mortgage__law-link");
+
 .mortgage {
 
 	&__title {
@@ -75,26 +77,11 @@
 		font-family: $fontName-SuisseIntlSemiBold, Arial, sans-serif;
 
 		&-link {
-			display: block;
 			margin-top: 35px;
 
 			&:last-of-type {
 				margin-bottom: 110px;
 			}
-		}
-
-		&-icon {
-			display: inline-block;
-			margin-right: 16px;
-			background: url($path-images + $path-pdf-lines) no-repeat center;
-			@include size(46px, 54px);
-		}
-
-		&-name {
-			display: inline-block;
-			height: 100%;
-			vertical-align: top;
-			padding-top: 7px;
 		}
 	}
 }
