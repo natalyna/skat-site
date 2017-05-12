@@ -22,7 +22,9 @@ Router.map(function() {
       this.route('history');
       this.route('services');
   });
-  this.route('news');
+  this.route('news', function() {
+      this.route('show', { path: '/show/:news_id' });
+  });
   this.route('contacts');
 });
 

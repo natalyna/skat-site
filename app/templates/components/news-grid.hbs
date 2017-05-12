@@ -1,44 +1,24 @@
 <div class="row">
-    <div class="col-md-4">
-        <a href="#" class="news-item">
-            <div class="news-item__header">
-                <span class="clock-icon"></span>
-                <small class="news-item__date">5 февраля 2017</small>
-            </div>
-            <div class="news-item__text">
-                Выгодно инвестировать в коммерческие предложения на старте
-            </div>
-            <div class="news-item__footer"></div>
-        </a>
-    </div>
-    <div class="col-md-4">
-        <a href="#" class="news-item">
-            <div class="news-item__header">
-                <span class="clock-icon"></span>
-                <small class="news-item__date">5 февраля 2017</small>
-            </div>
-            <div class="news-item__text">
-                Выгодно инвестировать в коммерческие предложения на старте
-            </div>
-            <div class="news-item__footer"></div>
-        </a>
-    </div>
-    <div class="col-md-4">
-        <a href="#" class="news-item">
-            <img src="/assets/images/atlantida.png" alt="Атлантида" class="news-item__image">
-            <div class="news-item__layout">
-                <div class="news-item__header">
-                    <span class="clock-icon"></span>
-                    <small class="news-item__date">5 февраля 2017</small>
+    {{#each news as |item|}}
+        <div class="col-md-4">
+            {{#link-to 'news.show' item.id class="news-item"}}
+                {{#if item.isProject}}
+                    <img src="{{item.imgSrc}}" alt="" class="news-item__image">
+                {{/if}}
+                <div class="news-item__layout {{if item.isProject 'news-item__layout_project'}}">
+                    <div class="news-item__header">
+                        <span class="clock-icon"></span>
+                        <small class="news-item__date">{{moment-format item.date 'DD MMMM YYYY' 'DD.MM.YYYY'}}</small>                        
+                    </div>
+                    <div class="news-item__text">{{item.title}}</div>
+                    <div class="news-item__footer">
+                        {{#if item.isAction}}
+                            <span class="badge badge_action">Акция</span>
+                            <small>1-7 марта</small>
+                        {{/if}}
+                    </div>
                 </div>
-                <div class="news-item__text">
-                    Проект Атлантида — победитель Urban Awards 2016!
-                </div>
-                <div class="news-item__footer">
-                    <span class="badge badge_action">Акция</span>
-                    <small>1-7 марта</small>
-                </div>
-            </div>
-        </a>
-    </div>
+            {{/link-to}}
+        </div>
+    {{/each}}
 </div>

@@ -40,6 +40,7 @@
 				&.active {
 					color: $link-hover-color;
 					border-bottom: 4px solid $link-hover-color;
+					padding-top: 4px;
 				}
 			}
 		}
