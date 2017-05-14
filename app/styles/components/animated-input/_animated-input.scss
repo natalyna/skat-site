@@ -1,0 +1,26 @@
+.form-group_animated {
+	position: relative;
+}
+
+.form-control_animated {
+	height: 65px;
+	padding-top: 25px;
+	padding-left: 18px;
+	padding-right: 18px;
+
+	&:focus,
+	&:valid {
+		& ~ .control-label_animated {
+			top: 15px;
+			font-size: 10px;
+		}
+	}
+}
+
+.control-label_animated {
+	position: absolute;
+	top: 22px;
+	left: 18px;
+	color: #989ba2;
+	@include transition(all, 0.2s, ease);
+}

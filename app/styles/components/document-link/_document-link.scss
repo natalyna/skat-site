@@ -8,13 +8,9 @@
 			display: table-cell;
 		}
 
-		&-icon {
-			@include size(50px, 54px);
-		}
-
 		&-name {
 			height: 100%;
-			padding-left: 16px;
+			vertical-align: middle;
 		}
 	}
 
@@ -26,15 +22,12 @@
 @mixin document-link-skin-default($selector) {
 	#{$selector} {
 		&-icon {
+			@include size(50px, 54px);
 			background: url($path-images + $path-pdf-lines) no-repeat center;
-
-			&_add-doc {
-				background: url($path-images + $path-adddoc) no-repeat center;
-			}
 		}
 
 		&-name {
-			vertical-align: middle;
+			padding-left: 16px;
 		}
 	}
 }

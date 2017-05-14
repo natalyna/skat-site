@@ -1,0 +1,12 @@
+@mixin document-link-skin-add-doc($selector) {
+	#{$selector} {
+		&-icon {
+			@include size(41px, 40px);
+			background: url($path-images + $path-adddoc) no-repeat center;
+		}
+
+		&-name {
+			padding-left: 11px;
+		}
+	}
+}

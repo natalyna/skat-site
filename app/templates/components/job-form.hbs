@@ -5,24 +5,27 @@
             <form action="#" class="job-form__form">
                 <div class="job-form__form-row">
                     <div class="job-form__form-cell job-form__form-cell_3">
-                        {{input value="" placeholder="Фамилия, Имя, Отчество" class="form-control"}}
+                        <div class="form-group form-group_animated">
+                            {{input value="" class="form-control form-control_animated"}}
+                            <label class="control-label_animated">Фамилия, Имя, Отчество</label>
+                        </div>
                     </div>
                     <div class="job-form__form-cell job-form__form-cell_3">
-                        {{input value="" placeholder="E-mail" type="email" class="form-control"}}
+                        {{input value="" type="email" class="form-control" placeholder="E-mail"}}
                     </div>
                     <div class="job-form__form-cell job-form__form-cell_3">
-                        {{input value="" placeholder="Телефон" type="phone" class="form-control"}}
+                        {{input value="" type="phone" class="form-control"}}
                     </div>
                 </div>
                 <div class="job-form__form-row">
                     <div class="job-form__form-cell">
-                        {{textarea placeholder="Сопроводительное письмо" class="form-control job-form__form-textarea"}}
+                        {{textarea class="form-control job-form__form-textarea"}}
                     </div>
                 </div>
                 <div class="job-form__form-row">
                     <div class="job-form__form-cell">
                         <div class="job-form__add-doc">
-                            <span class="job-form__add-doc-icon job-form__add-doc-icon_add-doc"></span>
+                            <span class="job-form__add-doc-icon"></span>
                             <div class="job-form__add-doc-name">
                                 <a href="#" class="job-form__add-doc-link">Прикрепите файлы</a>, если считаете нужным
                                 <br> (Ваше резюме, рекомендации и т.д.)
