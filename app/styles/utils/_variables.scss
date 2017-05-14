@@ -24,6 +24,7 @@ $path-iconHover-in: "social/icon-instagram-hover.svg";
 $path-icon-chevron: "icon-chevron.svg";
 $path-company: "company.png";
 $path-pdf-lines: "icon-pdf-lines.svg";
+$path-adddoc: "icon-adddoc.svg";
 $path-cross: "icon-cross.svg";
 $path-plus: "icon-plus.svg";
 
@@ -39,3 +40,5 @@ $bgColor-constructionDynamicsCell-3: #4c7fd0;
 $bgColor-constructionDynamicsCell-4: #739adb;
 $bgColor-constructionDynamicsCell-5: #99b5e4;
 $bgColor-constructionDynamicsCell: ($bgColor-constructionDynamicsCell-1, $bgColor-constructionDynamicsCell-2, $bgColor-constructionDynamicsCell-3, $bgColor-constructionDynamicsCell-4, $bgColor-constructionDynamicsCell-5);
+
+$width-threeCols: (100 / 3) + %;

@@ -27,6 +27,10 @@
 	#{$selector} {
 		&-icon {
 			background: url($path-images + $path-pdf-lines) no-repeat center;
+
+			&_add-doc {
+				background: url($path-images + $path-adddoc) no-repeat center;
+			}
 		}
 
 		&-name {

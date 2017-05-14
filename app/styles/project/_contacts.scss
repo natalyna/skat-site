@@ -1,0 +1,48 @@
+.contacts {
+	&__image {
+		@include size(100%, 330px);
+		margin-top: -80px;
+		margin-bottom: 80px;
+		background-color: #fafafa;
+	}
+
+	&__title {
+		margin-bottom: 45px;
+	}
+
+	&__intro {
+		margin-bottom: 50px;
+	}
+
+	&__unit {
+		margin-bottom: 55px;
+
+		&-title {
+			margin-bottom: 25px;
+		}
+
+		&-contact {
+			margin-top: 10px;
+			font-size: 20px;
+		}
+
+		&-people,
+		&-phone {
+			font-size: 12px;
+		}
+
+		&-people {
+			margin-bottom: 25px;
+		}
+
+		&-phone {
+
+		}
+	}
+
+	&__map {
+		@include size(100%, 655px);
+		margin-bottom: 50px;
+		background-color: #fafafa;
+	}
+}

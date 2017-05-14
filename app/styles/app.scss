@@ -2,6 +2,7 @@
 
 // Colors:
 $gray-dark: #35353d;
+$gray: #333335;
 $brand-primary: #0247bc;
 
 // Scaffolding:
@@ -15,6 +16,10 @@ $line-height-base: 1.6;
 $btn-primary-bg: $brand-primary;
 $btn-default-border: $brand-primary;
 $btn-default-color: $brand-primary;
+
+// Forms:
+$input-border: transparent;
+$input-border-focus: #79aed6;
 
 // Badges:
 $badge-border-radius: 4px;

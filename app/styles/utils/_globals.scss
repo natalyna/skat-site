@@ -69,3 +69,11 @@ ul {
 	vertical-align: top;
 	margin-right: 6px;
 }
+
+.form-control {
+	@include box-shadow(none);
+
+	&:focus {
+		@include box-shadow(none);
+	}
+}
