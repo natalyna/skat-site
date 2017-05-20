@@ -1,0 +1,30 @@
+.career {
+	&__image {
+		@include size(100%, 330px);
+		margin-top: -80px;
+		margin-bottom: 80px;
+		background-color: #fafafa;
+	}
+
+	&__title {
+		margin-bottom: 30px;
+	}
+
+	&__intro {
+		margin-bottom: 50px;
+	}
+
+	&__city {
+		font-size: 12px;
+		margin-top: 15px;
+		margin-bottom: 20px;
+
+		&-pin {
+			@include size(10px, 14px);
+		}
+	}
+
+	&__vacancies {
+		margin-bottom: 125px;
+	}
+}

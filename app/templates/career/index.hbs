@@ -1,0 +1,26 @@
+<div class="career">
+    <div class="career__image">
+        <img src="#" alt="">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <h1 class="career__title">
+					Карьера
+				</h1>
+                <div class="career__intro">
+                    Строительная компания СКАТ всегда славилась безупречной репутацией и профессионализмом. Структура объединила в себе лучших специалистов рынка девелопмента, которые обладают первоклассными знаниями и демонстрируют неизменную высокую производительность. Мы убеждены в том, что только вовлеченный и лояльный сотрудник сможет быть эффективным.
+                </div>
+                <h4>Актуальные вакансии</h4>
+                <div class="career__city">
+                    <img class="career__city-pin" src="/assets/images/icon-mappin.svg" alt=""> Сыктывкар
+                </div>
+                <div class="career__vacancies">
+                    {{#each model as |item|}}
+                        {{vacancy-item title=item.title publDate=item.publDate}}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

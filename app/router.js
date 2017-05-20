@@ -26,6 +26,9 @@ Router.map(function() {
       this.route('show', { path: '/show/:news_id' });
   });
   this.route('contacts');
+  this.route('career', function() {
+      this.route('show', { path: '/show/:vacancy_id' });
+  });
 });
 
 export default Router;

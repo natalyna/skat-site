@@ -16,4 +16,6 @@ export default function() {
 	this.get('/projects/:id');
 	this.get('/news');
 	this.get('/news/:id');
+	this.get('/vacancies');
+	this.get('/vacancies/:id');
 }
