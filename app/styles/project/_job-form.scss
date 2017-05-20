@@ -1,5 +1,6 @@
 @include document-link(".job-form__add-doc", false);
 @include document-link-skin-add-doc(".job-form__add-doc");
+@include animated-input(".animated-input");
 
 .job-form {
 	background-color: #e3e5e4;

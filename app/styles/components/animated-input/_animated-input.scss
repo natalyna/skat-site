@@ -1,26 +1,53 @@
-.form-group_animated {
-	position: relative;
-}
+@mixin animated-input($selector, $defaultSkin: true) {
+	#{$selector} {
+		&__group {
+			position: relative;
+		}
 
-.form-control_animated {
-	height: 65px;
-	padding-top: 25px;
-	padding-left: 18px;
-	padding-right: 18px;
+		&__input {
+			height: 65px;
+			padding-top: 25px;
+			padding-left: 18px;
+			padding-right: 18px;
 
-	&:focus,
-	&:valid {
-		& ~ .control-label_animated {
-			top: 15px;
-			font-size: 10px;
+			&:focus,
+			&_not-empty {
+				& ~ #{$selector}__label {
+					top: 15px;
+				}
+			}
+		}
+
+		&__label {
+			position: absolute;
+			top: 22px;
+			left: 18px;
 		}
 	}
+
+	@if $defaultSkin !=false {
+        @include animated-input-skin-default($selector);
+    }
 }
 
-.control-label_animated {
-	position: absolute;
-	top: 22px;
-	left: 18px;
-	color: #989ba2;
-	@include transition(all, 0.2s, ease);
+@mixin animated-input-skin-default($selector) {
+		#{$selector} {
+			&__group {
+			}
+
+			&__input {
+
+				&:focus,
+				&_not-empty {
+					& ~ #{$selector}__label {
+						font-size: 10px;
+					}
+				}
+			}
+
+			&__label {
+				color: #989ba2;
+				@include transition(all, 0.2s, ease);
+			}
+	}
 }

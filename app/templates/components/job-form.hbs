@@ -5,21 +5,30 @@
             <form action="#" class="job-form__form">
                 <div class="job-form__form-row">
                     <div class="job-form__form-cell job-form__form-cell_3">
-                        <div class="form-group form-group_animated">
-                            {{input value="" class="form-control form-control_animated"}}
-                            <label class="control-label_animated">Фамилия, Имя, Отчество</label>
+                        <div class="form-group animated-input__group">
+                            {{input name="name" value=name class="form-control animated-input__input" keyPress=(action 'inputChanged' 'name')}}
+                            <label class="control-label animated-input__label">Фамилия, Имя, Отчество</label>
                         </div>
                     </div>
                     <div class="job-form__form-cell job-form__form-cell_3">
-                        {{input value="" type="email" class="form-control" placeholder="E-mail"}}
+                        <div class="form-group animated-input__group">
+                            {{input name="email" value=email type="email" class="form-control animated-input__input" keyPress=(action 'inputChanged' 'email')}}
+                            <label class="control-label animated-input__label">E-mail</label>
+                        </div>
                     </div>
                     <div class="job-form__form-cell job-form__form-cell_3">
-                        {{input value="" type="phone" class="form-control"}}
+                        <div class="form-group animated-input__group">
+                            {{input name="phone" value=phone type="phone" class="form-control animated-input__input" keyPress=(action 'inputChanged' 'phone')}}
+                            <label class="control-label animated-input__label">Телефон</label>
+                        </div>
                     </div>
                 </div>
                 <div class="job-form__form-row">
                     <div class="job-form__form-cell">
-                        {{textarea class="form-control job-form__form-textarea"}}
+                        <div class="form-group animated-input__group">
+                            {{textarea name="letter" value=letter class="form-control job-form__form-textarea animated-input__input" keyPress=(action 'inputChanged' 'letter')}}
+                            <label class="control-label animated-input__label">Сопроводительное письмо</label>
+                        </div>
                     </div>
                 </div>
                 <div class="job-form__form-row">
