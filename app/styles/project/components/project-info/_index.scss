@@ -1,0 +1,52 @@
+.project-info {
+	&__logo {
+		position: relative;
+		margin-bottom: 30px;
+
+		&-image {
+			@include size(268px, 112px);
+			display: block;
+			margin: 0 auto;
+		}
+
+		&-controls {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			text-align: right;
+		}
+
+		&-address {
+			color: #707070;
+			margin-top: 20px;
+
+			&-pin {
+				display: inline-block;
+				height: 14px;
+				width: 14px;
+				background: url($path-images + $path-icon-pin-grey) no-repeat center;
+				vertical-align: baseline;
+			}
+		}
+	}
+
+	&__carousel {
+		position: relative;
+	}
+
+	&__tabs {
+		a {
+			font-family: $fontName-SuisseIntlSemiBold, Arial, sans-serif;
+		}
+	}
+
+	&__hero-text {}
+
+	&__hero-image {}
+
+	&__params-grid {}
+
+	&__docs {}
+
+	&__map {}
+}

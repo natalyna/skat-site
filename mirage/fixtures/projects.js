@@ -1,1 +1,17 @@
-export default [{}]
+export default [{
+	name: "Атлантида",
+	heroImgSrc: "/assets/images/projects/project-cover-atlantida@2x.png",
+	type: "Жилой комплекс",
+	expiration: "01.04.2018",
+	buildingCount: "4",
+	flatCount: "1330",
+	floorCount: "14 этажей",
+	roomCount: "студия, 1к, 2к, 3к, 4к",
+	apartmentSize: "от 29 до 190 кв.м",
+	price: "от 990 000",
+	address: "г. Сыктывкар, Октябрьский проспект 204",
+	addressShort: "Октябрьский проспект 204",
+	techicalParams: "",
+	location: "",
+	yard: "",
+}]
