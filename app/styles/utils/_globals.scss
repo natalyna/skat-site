@@ -40,6 +40,22 @@ ul {
 	}
 }
 
+.list {
+	&_dashed {
+		list-style-type: none;
+		padding-left: 0;
+
+		> li {
+			text-indent: 1px;
+
+			&:before {
+				content: "—";
+				margin-right: 5px;
+			}
+		}
+	}
+}
+
 label {
 	font-weight: normal;
 }

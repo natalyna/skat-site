@@ -1,7 +1,9 @@
 .vacancy-item {
+	display: block;
 	padding: 20px;
 	background-color: #f6f6f6;
 	margin-bottom: 20px;
+	color: $gray-dark;
 
 	&:hover {
 		cursor: pointer;

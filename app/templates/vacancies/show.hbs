@@ -1,0 +1,37 @@
+<div class="vacancy">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <h1 class="vacancy__title">{{model.title}}</h1>
+                <small class="vacancy__date">
+					<span class="clock-icon"></span>
+					{{moment-format model.publDate 'DD MMMM YYYY' 'DD.MM.YYYY'}}
+				</small>
+                <p class="vacancy__p">
+                    <h5 class="vacancy__p-title">Обязанности</h5>
+                    <ul class="vacancy__p-list list_dashed">
+                        {{#each model.dutyArr as |dutyItem|}}
+                            <li class="vacancy__p-list-item">{{dutyItem}}</li>
+                        {{/each}}
+                    </ul>
+                </p>
+                <p class="vacancy__p">
+                    <h5 class="vacancy__p-title">Опыт работы</h5> {{model.experience}}
+                </p>
+                <p class="vacancy__p">
+                    <h5 class="vacancy__p-title">Требования</h5>
+                    <ul class="vacancy__p-list list_dashed">
+                        {{#each model.requirementArr as |reqItem|}}
+                            <li class="vacancy__p-list-item">{{reqItem}}</li>
+                        {{/each}}
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="vacancy__job-form">
+            {{job-form title="Отправьте резюме:"}}
+        </div>
+    </div>
+</div>

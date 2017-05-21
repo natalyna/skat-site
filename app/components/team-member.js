@@ -12,11 +12,11 @@ export default Ember.Component.extend({
 			if (isVisible) {
 				$info.hide();
 				$expand.addClass("team-member__expand_close");
-				this.set("isInfoVisible", false)
+				this.set("isInfoVisible", false);
 			} else {
 				$info.show();
 				$expand.removeClass("team-member__expand_close");
-				this.set("isInfoVisible", true)
+				this.set("isInfoVisible", true);
 			}
 
 		}

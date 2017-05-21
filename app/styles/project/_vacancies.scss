@@ -1,4 +1,4 @@
-.career {
+.vacancies {
 	&__image {
 		@include size(100%, 330px);
 		margin-top: -80px;
@@ -26,5 +26,35 @@
 
 	&__vacancies {
 		margin-bottom: 125px;
+	}
+}
+
+.vacancy {
+	&__title {
+		margin-bottom: 35px;
+
+	}
+
+	&__date {
+		display: inline-block;
+		margin-bottom: 25px;
+	}
+
+	&__p {
+		margin-bottom: 35px;
+
+		&:last-of-type {
+			margin-bottom: 140px;
+		}
+
+		&-title {
+			margin-bottom: 20px;
+		}
+
+		&-list {
+			&-item {
+				margin-bottom: 10px;
+			}
+		}
 	}
 }
