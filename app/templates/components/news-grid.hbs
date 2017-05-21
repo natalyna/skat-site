@@ -8,13 +8,13 @@
                 <div class="news-item__layout {{if item.isProject 'news-item__layout_project'}}">
                     <div class="news-item__header">
                         <span class="clock-icon"></span>
-                        <small class="news-item__date">{{moment-format item.date 'DD MMMM YYYY' 'DD.MM.YYYY'}}</small>                        
+                        <small class="news-item__date">{{moment-format item.publDate 'DD MMMM YYYY' 'DD.MM.YYYY'}}</small>                        
                     </div>
-                    <div class="news-item__text">{{item.title}}</div>
+                    <div class="news-item__text">{{item.label}}</div>
                     <div class="news-item__footer">
                         {{#if item.isAction}}
                             <span class="badge badge_action">Акция</span>
-                            <small>1-7 марта</small>
+                            <small>{{item.expiration}}</small>
                         {{/if}}
                     </div>
                 </div>
