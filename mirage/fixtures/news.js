@@ -9,7 +9,7 @@ export default [{
 	title: "Выгодно инвестировать в коммерческие предложения на старте",
 	isProject: true,
 	isAction: true,
-	imgSrc: "/assets/images/atlantida.png"
+	imgSrc: "/assets/images/projects/project-cover-atlantida@2x.png"
 }, {
 	date: "05.05.2017",
 	title: "Выгодно инвестировать в коммерческие предложения на старте",
@@ -30,11 +30,11 @@ export default [{
 	title: "Выгодно инвестировать в коммерческие предложения на старте",
 	isProject: true,
 	isAction: true,
-	imgSrc: "/assets/images/rosha.png"
+	imgSrc: "/assets/images/projects/project-cover-roscha@2x.png"
 }, {
 	date: "05.11.2017",
 	title: "Выгодно инвестировать в коммерческие предложения на старте",
 	isProject: true,
 	isAction: true,
-	imgSrc: "/assets/images/company.png"
+	imgSrc: "/assets/images/projects/about-grafika@2x.png"
 }];
