@@ -5,7 +5,7 @@
 		display: inline-block;
 		height: 100%;
 		width: 25px;
-		background: url($path-images + "icon-chevron.svg") no-repeat center;
+		background: url($path-images + $path-icon-chevron) no-repeat center;
 
 		&_left {
 			@include rotation(180deg);
