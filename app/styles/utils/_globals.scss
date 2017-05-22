@@ -82,15 +82,6 @@ label {
 	padding-right: 40px;
 }
 
-.clock-icon {
-	display: inline-block;
-	height: 18px;
-	width: 18px;
-	background: url($path-images + $path-icon-clock) no-repeat center;
-	vertical-align: top;
-	margin-right: 6px;
-}
-
 .icons {
 	display: inline-block;
 	@include size(18px);
@@ -103,6 +94,12 @@ label {
 	&_camera {
 		background: url($path-images + $path-icon-camera) no-repeat center;
 		@include size(24px);
+	}
+
+	&_clock {
+		background: url($path-images + $path-icon-clock) no-repeat center;
+		vertical-align: top;
+		margin-right: 6px;
 	}
 }
 

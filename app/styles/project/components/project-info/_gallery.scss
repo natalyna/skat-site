@@ -1,0 +1,27 @@
+.gallery {
+	margin-top: 25px;
+
+	&__image {
+		position: relative;
+		background-color: #fafafa;
+		padding: 20px;
+		@include size(100%, 200px);
+
+		&-layout {
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: rgba(0, 0, 0, 0.25);
+			@include size(100%);
+
+			&:hover {
+				cursor: pointer;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+		}
+
+		&-date {
+
+		}
+	}
+}

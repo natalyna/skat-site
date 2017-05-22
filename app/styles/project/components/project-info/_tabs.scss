@@ -5,9 +5,19 @@
 		position: absolute;
 		right: 0;
 		top: 0;
+		padding: 25px 0;
 	}
 
 	&__link {
+		display: inline-block;
+		margin-right: 30px;
 
+		&:last-of-type {
+			margin-right: 0;
+		}
+
+		&-text {
+			vertical-align: top;
+		}
 	}
 }

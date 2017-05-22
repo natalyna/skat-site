@@ -40,9 +40,27 @@
 		}
 	}
 
-	&__hero-text {}
+	&__hero-text {
+		margin: 125px 18%;
+		text-align: center;
 
-	&__hero-image {}
+		&-title {
+			
+		}
+
+		&-p {
+			font-size: 20px;
+		}
+	}
+
+	&__hero-image {
+		text-align: center;
+
+		&-img {
+			width: 100%;
+			max-height: 710px;
+		}
+	}
 
 	&__params-grid {}
 

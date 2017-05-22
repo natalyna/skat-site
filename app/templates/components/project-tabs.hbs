@@ -2,11 +2,11 @@
     <div class="tabs__links">
         <a href="#" class="tabs__link">
             <span class="icons icons_virtual-tour"></span>
-            <span>Виртуальный тур</span>
+            <span class="tabs__link-text">Виртуальный тур</span>
         </a>
         <a href="#" class="tabs__link">
             <span class="icons icons_camera"></span>
-            <span>Онлайн трансляция</span>
+            <span class="tabs__link-text">Онлайн трансляция</span>
         </a>
     </div>
     <ul class="nav nav-tabs" role="tablist">
@@ -15,7 +15,77 @@
     </ul>
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="building">
-            Tab 1
+            <div class="gallery">
+                <div class="row">
+                    <div class="col-md-4">
+                    	<div class="gallery__image">
+                    		<div class="gallery__image-layout"></div>
+                    		<div class="gallery__image-date">
+                    			<span class="icons icons_clock"></span>
+                    			21 февраля 2017
+                    		</div>
+                    	</div>
+                    </div>
+                    <div class="col-md-4">
+                    	<div class="gallery__image">
+                    		<div class="gallery__image-layout"></div>
+                    		<div class="gallery__image-date">
+                    			<span class="icons icons_clock"></span>
+                    			21 февраля 2017
+                    		</div>
+                    	</div>
+                    </div>
+                    <div class="col-md-4">
+                    	<div class="gallery__image">
+                    		<div class="gallery__image-layout"></div>
+                    		<div class="gallery__image-date">
+                    			<span class="icons icons_clock"></span>
+                    			21 февраля 2017
+                    		</div>
+                    	</div>
+                    </div>
+                </div>
+            </div>
+            <div class="data">
+                <div class="row">
+                    <div class="col-md-2">
+                    	<div class="data__item">
+                    		<div class="data__item-title">Количество домов</div>
+                    		<div class="data__item-value">{{buildingCount}}</div>
+                    	</div>
+                    </div>
+                    <div class="col-md-2">
+                    	<div class="data__item">
+                    		<div class="data__item-title">Количество квартир</div>
+                    		<div class="data__item-value">{{flatCount}}</div>
+                    	</div>
+                    </div>
+                    <div class="col-md-2">
+                    	<div class="data__item">
+                    		<div class="data__item-title">Этажность</div>
+                    		<div class="data__item-value">{{floorCount}}</div>
+                    	</div>
+                    </div>
+                    <div class="col-md-2">
+                    	<div class="data__item">
+                    		<div class="data__item-title">Количество комнат</div>
+                    		<div class="data__item-value">{{roomCount}}</div>
+                    	</div>
+                    </div>
+                    <div class="col-md-2">
+                    	<div class="data__item">
+                    		<div class="data__item-title">Площадь квартир</div>
+                    		<div class="data__item-value">{{apartmentSize}}</div>
+                    	</div>
+                    </div>
+                    <div class="col-md-2">
+                    	<div class="data__item">
+                    		<div class="data__item-title">Цена</div>
+                    		<div class="data__item-value">{{price}}</div>
+                    	</div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div role="tabpanel" class="tab-pane" id="news">
             Tab 2

@@ -1,0 +1,19 @@
+.data {
+	margin-top: 55px;
+
+	&__item {
+		padding: 15px 0;
+		border-bottom: 2px solid $brand-primary;
+		border-top: 2px solid $brand-primary;
+		color: $brand-primary;
+		font-family: $fontName-SuisseIntlSemiBold, Arial, sans-serif;
+
+		&-title {
+			font-size: 12px;
+		}
+
+		&-value {
+
+		}
+	}
+}

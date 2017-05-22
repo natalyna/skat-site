@@ -16,12 +16,18 @@
     </div>
     <div class="container">
         <div class="project-info__tabs">
-            {{project-tabs}}
+            {{project-tabs buildingCount=model.buildingCount flatCount=model.flatCount floorCount=model.floorCount roomCount=model.roomCount apartmentSize=model.apartmentSize price=model.price}}
         </div>
     </div>
-    <div class="project-info__hero-text">
+    <div class="container">
+        <div class="project-info__hero-text">
+            <h1 class="project-info__hero-text-title">Ваш остров комфорта</h1>
+            <p class="project-info__hero-text-p">Много текста 20 пикселей 9 строк Много текста 20 пикселей 9 строк Много текста 20 пикселей 9 строк Много текsdfsdfста 20 пикселей 9 строк Много текста 20 пикселей 9 строк Много текста 20 пикселей 9 стрsdfsdfок Много текста 20 пикселей 9 строк Много текста 20 пикселей 9 строк Много текsdfsdfста 20 пикселей 9 строк Много текста 20 пикселей 9 строк Много текста 20 пsdfsdfикселей 9 строк Много текста 20 пиксsdfdsfелей 9 строк Много текста 20 пиксеsdfdsfлей 9 строк Много текста 20 пикселей 9 строк Много текста 20 пикселей 9 строк Много текста 20 пикселей 9 строк </p>
+        </div>
     </div>
     <div class="project-info__hero-image">
+        <h2>Выберите ваш будущий дом</h2>
+        <img class="project-info__hero-image-img" src="/assets/images/projects/slider-atlantida@2x.png" alt="">
     </div>
     <div class="project-info__params-grid">
         {{project-params-grid}}
