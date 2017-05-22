@@ -14,4 +14,4 @@ export default [{
 	techicalParams: "",
 	location: "",
 	yard: "",
-}]
+}];
