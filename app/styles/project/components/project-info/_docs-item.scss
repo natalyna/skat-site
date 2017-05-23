@@ -1,0 +1,36 @@
+.docs-item {
+	display: table;
+	width: 100%;
+	padding: 15px 0;
+	border-bottom: 1px solid #eaeaea;
+
+	&:last-of-type {
+		border-bottom: none;
+	}
+
+	&__title,
+	&__pdf,
+	&__title,
+	&__date,
+	&__upload {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	&__pdf {
+
+	}
+
+	&__title {
+
+	}
+
+	&__date {
+		text-align: right;
+		color: #949DA7;
+	}
+
+	&__download {
+		text-align: right;
+	}
+}

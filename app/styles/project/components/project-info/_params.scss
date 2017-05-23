@@ -1,0 +1,44 @@
+.params {
+
+	&__item {
+		position: relative;
+		padding: 30px;
+		@include size(100%, 320px);
+		margin-bottom: 30px;
+		background-color: #f2f2f2;
+		color: #fff;
+
+		&_tech {
+
+		}
+
+		&_location {
+
+		}
+
+		&_yard {
+
+		}
+
+		&_mortgage {
+
+		}
+
+		&-layout {
+			position: absolute;
+			top: 0;
+			left: 0;
+			@include size(100%);
+			background-color: rgba(0, 0, 0, 0.25);
+
+			&:hover {
+				cursor: pointer;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+		}
+
+		&-title {
+			font-size: 20px;
+		}
+	}
+}

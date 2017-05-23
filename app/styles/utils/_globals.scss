@@ -101,6 +101,17 @@ label {
 		vertical-align: top;
 		margin-right: 6px;
 	}
+
+	&_pdf-medium {
+		background: url($path-images + $path-icon-pdf-medium) no-repeat center;
+		@include size(18px, 24px);
+	}
+
+	&_download {
+		background: url($path-images + $path-icon-download) no-repeat center;
+		@include size(20px);
+		vertical-align: middle;
+	}
 }
 
 .form-control {
@@ -122,4 +133,8 @@ label {
 		border-bottom: 4px solid $link-hover-color;
 		padding-top: 26px;
 	}
+}
+
+.ember-cli-g-map {
+	height: 710px;
 }

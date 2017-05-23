@@ -62,9 +62,23 @@
 		}
 	}
 
-	&__params-grid {}
+	&__params-grid {
+		margin-top: 45px;
+	}
 
-	&__docs {}
+	&__docs {
+		max-width: 630px;
+		margin: 0 auto;
+		margin-top: 80px;
 
-	&__map {}
+		&-title {
+			text-align: center;
+		}
+	}
+
+	&__map {
+		margin-top: 80px;
+		background-color: #fafafa;
+		@include size(100%, 710px);
+	}
 }
