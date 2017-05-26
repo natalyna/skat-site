@@ -1,0 +1,16 @@
+{{#unless imgRight}}
+    <div class="params-item__image">
+        <img src="{{imgSrc}}" alt="">
+    </div>
+{{/unless}}
+<div class="params-item__text {{if imgRight 'params-item__text_left'}}">
+    <h4 class="params-item__title">{{title}}</h4>
+    <p class="params-item__p">
+        {{yield}}
+    </p>
+</div>
+{{#if imgRight}}
+    <div class="params-item__image">
+        <img src="{{imgSrc}}" alt="">
+    </div>
+{{/if}}

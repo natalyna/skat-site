@@ -1,0 +1,39 @@
+.params-item {
+	display: table;
+	width: 100%;
+	margin-bottom: 30px;
+
+	&__image,
+	&__text {
+		display: table-cell;
+		width: 50%;
+		vertical-align: middle;
+	}
+
+	&__image {
+		height: 270px;
+
+		img {
+			background-color: #f2f2f2;
+			@include size(100%);
+		}
+	}
+
+	&__title {
+
+	}
+
+	&__text {
+		padding-left: 30px;
+		padding-right: 0;
+
+		&_left {
+			padding-left: 0;
+			padding-right: 30px;
+		}
+	}
+
+	&__p {
+
+	}
+}
