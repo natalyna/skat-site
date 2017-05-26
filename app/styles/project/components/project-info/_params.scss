@@ -1,6 +1,7 @@
 .params {
 
 	&__item {
+		display: block;
 		position: relative;
 		padding: 30px;
 		@include size(100%, 320px);

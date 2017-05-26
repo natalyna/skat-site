@@ -5,6 +5,9 @@
 		position: relative;
 		background-color: #fafafa;
 		padding: 20px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
 		@include size(100%, 200px);
 
 		&-layout {
@@ -21,7 +24,7 @@
 		}
 
 		&-date {
-
+			color: #fff;
 		}
 	}
 }
