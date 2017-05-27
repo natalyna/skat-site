@@ -20,4 +20,5 @@ export default function() {
 	this.get('/vacancies/:id');
 	this.get('/project_sliders');
 	this.get('/tech_sliders');
+	this.get('/yard_sliders');
 }
