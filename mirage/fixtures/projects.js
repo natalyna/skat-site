@@ -3,7 +3,7 @@ export default [{
 	heroImgSrc: "/assets/images/projects/project-cover-atlantida@2x.png",
 	type: "Жилой комплекс",
 	expiration: "01.04.2018",
-	buildingCount: "4",
+	buildingCount: "4 дома",
 	flatCount: "1330",
 	floorCount: "14 этажей",
 	roomCount: "студия, 1к, 2к, 3к, 4к",

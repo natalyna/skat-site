@@ -1,8 +1,9 @@
 .docs-item {
 	display: table;
 	width: 100%;
-	padding: 15px 0;
+	padding: 10px 0;
 	border-bottom: 1px solid #eaeaea;
+	line-height: 1;
 
 	&:last-of-type {
 		border-bottom: none;
@@ -17,12 +18,12 @@
 		vertical-align: middle;
 	}
 
-	&__pdf {
-
+	&__pdf-medium {
+		width: 14px;
 	}
 
 	&__title {
-
+		font-size: 20px;
 	}
 
 	&__date {

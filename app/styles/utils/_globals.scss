@@ -125,13 +125,21 @@ label {
 .nav-tabs{
 	border-bottom: 1px solid #ececec;
 
+	& > li > a {
+		padding: 25px 0;
+		margin-right: 35px;
+	}
+
 	& > li.active > a,
 	& > li.active > a:hover,
 	& > li.active > a:focus {
 		color: $brand-primary;
 		border: none;
-		border-bottom: 4px solid $link-hover-color;
-		padding-top: 26px;
+		border-bottom: 3px solid $link-hover-color;
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 25px;
+		padding-bottom: 22px;
 	}
 }
 

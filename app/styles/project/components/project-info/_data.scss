@@ -1,8 +1,8 @@
 .data {
-	margin-top: 55px;
+	margin-top: 52px;
 
 	&__item {
-		padding: 15px 0;
+		padding: 10px 0;
 		border-bottom: 2px solid $brand-primary;
 		border-top: 2px solid $brand-primary;
 		color: $brand-primary;
@@ -10,6 +10,7 @@
 
 		&-title {
 			font-size: 12px;
+			margin-bottom: 3px;
 		}
 
 		&-value {

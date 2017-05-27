@@ -3,13 +3,14 @@
 	&__item {
 		display: block;
 		position: relative;
-		padding: 30px;
-		@include size(100%, 320px);
+		padding: 25px;
+		padding-top: 20px;
 		margin-bottom: 30px;
 		background-color: #f2f2f2;
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
+		@include size(100%, 320px);
 
 		&_tech {
 			background-image: url(/assets/images/projects/atlantida/atlantida-tech@2x.png);
@@ -31,8 +32,8 @@
 			position: absolute;
 			top: 0;
 			left: 0;
-			@include size(100%);
 			background-color: rgba(0, 0, 0, 0.25);
+			@include size(100%);
 
 			&:hover {
 				cursor: pointer;
@@ -41,7 +42,7 @@
 		}
 
 		&-title {
-			font-size: 20px;
+			font-size: 22px;
 			color: #fff;
 		}
 	}

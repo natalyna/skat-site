@@ -1,7 +1,8 @@
 .header {
-	height: 95px;
+	height: 90px;
 	margin-bottom: 80px;
 	font-family: $fontName-SuisseIntlSemiBold, Arial, sans-serif;
+	font-size: 16px;
 	@include box-shadow($shadow-header);
 
 	&__container {
@@ -12,8 +13,8 @@
 	&__logo {
 		display: block;
 		position: absolute;
-		top: 20px;
-		left: 0;
+		top: 15px;
+		left: -25px;
 		width: 80px;
 		height: 60px;
 		margin-left: 45px;
@@ -22,12 +23,12 @@
 	&__nav {
 		display: table;
 		height: 100%;
-		border-spacing: 25px;
 		margin: 0 auto;
 	}
 
 	&__link {
 		display: table-cell;
+		padding: 0 22px;
 		vertical-align: middle;
 		height: 100%;
 
@@ -36,7 +37,7 @@
 		}
 
 		&.active {
-			color: $link-hover-color;
+			color: #35353D;
 		}
 	}
 }

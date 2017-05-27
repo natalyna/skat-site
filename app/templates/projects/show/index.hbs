@@ -1,30 +1,24 @@
 <div class="container">
     {{project-info-logo logoSrc="/assets/images/projects/atlantida/logo-atlantida.svg" addressShort=model.project.addressShort}}
 </div>
-<div class="project-info">
-    {{project-carousel id="project-carousel" items=model.projectSlider class="project-info__carousel"}}
-    <div class="container">
-        <div class="project-info__tabs">
-            {{project-tabs buildingCount=model.project.buildingCount flatCount=model.project.flatCount floorCount=model.project.floorCount roomCount=model.project.roomCount apartmentSize=model.project.apartmentSize price=model.project.price}}
-        </div>
+{{project-carousel id="project-carousel" items=model.projectSlider class="project-info__carousel"}}
+<div class="container">
+    <div class="project-info__tabs">
+        {{project-tabs buildingCount=model.project.buildingCount flatCount=model.project.flatCount floorCount=model.project.floorCount roomCount=model.project.roomCount apartmentSize=model.project.apartmentSize price=model.project.price}}
     </div>
-    <div class="container">
-        {{#project-info-hero-text title="Ваш остров комфорта" }}
-            Много текста 20 пикселей 9 строк Много текста 20 пикселей 9 строк Много текста 20 пикселей 9 строк Много текsdfsdfста 20 пикселей 9 строк Много текста 20 пикселей 9 строк Много текста 20 пикселей 9 стрsdfsdfок Много текста 20 пикселей 9 строк Много текста 20 пикселей 9 строк Много текsdfsdfста 20 пикселей 9 строк Много текста 20 пикселей 9 строк Много текста 20 пsdfsdfикселей 9 строк Много текста 20 пиксsdfdsfелей 9 строк Много текста 20 пиксеsdfdsfлей 9 строк Много текста 20 пикселей 9 строк Много текста 20 пикселей 9 строк Много текста 20 пикселей 9 строк
-        {{/project-info-hero-text}}
+    {{#project-info-hero-text title="Ваш остров комфорта" }}
+        Много текста 20 пикселей 9 строк Много текста 20 пикселей 9 строк Много текста 20 пикселей 9 строк Много текsdfsdfста 20 пикселей 9 строк Много текста 20 пикселей 9 строк Много текста 20 пикселей 9 стрsdfsdfок Много текста 20 пикселей 9 строк Много текста 20 пикселей 9 строк Много текsdfsdfста 20 пикселей 9 строк Много текста 20 пикселей 9 строк Много текста 20 пsdfsdfикселей 9 строк Много текста 20 пиксsdfdsfелей 9 строк Много текста 20 пиксеsdfdsfлей 9 строк 
+    {{/project-info-hero-text}}
+</div>
+{{project-info-hero-image title="Выберите ваш будущий дом" imgSrc="/assets/images/projects/atlantida/atlantida-genplan@2x.png"}}
+<div class="container">
+    <div class="project-info__params-grid">
+        {{project-params-grid id=model.project.id}}
     </div>
-    {{project-info-hero-image title="Выберите ваш будущий дом" imgSrc="/assets/images/projects/atlantida/atlantida-genplan@2x.png"}}
-    <div class="container">
-        <div class="project-info__params-grid">
-            {{project-params-grid id=model.project.id}}
-        </div>
+    <div class="project-info__docs">
+        <h4 class="project-info__docs-title">Документация по объекту</h4> {{project-docs}}
     </div>
-    <div class="container">
-        <div class="project-info__docs">
-            <h4 class="project-info__docs-title">Документация по объекту</h4> {{project-docs}}
-        </div>
-    </div>
-    <div class="project-info__map">
-        {{project-map lat=61.698986 lng=50.8046383 zoom=17 info=true}}
-    </div>
+</div>
+<div class="project-info__map">
+    {{project-map lat=61.698986 lng=50.8046383 zoom=17 info=true}}
 </div>
