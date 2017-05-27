@@ -1,2 +1,25 @@
 <div class="map__overlay" {{action "enableMap"}}></div>
-{{g-maps name="my-map" lat=lat lng=lng zoom=zoom class="map__g-map-comp"}}
+{{#if info}}
+    <div class="map__info">
+        <div class="map__info-address">
+            <h5>Адрес объекта</h5>
+            <div>
+                г. Сыктывкар,
+                <br> Октябрьский проспект 204
+            </div>
+        </div>
+        <div class="map__info-office">
+            <h5>Офис продаж</h5>
+            <p>ул. Лыткина, 31</p>
+            <p>Телефон: +7(8212)55-1234</p>
+            <p>
+                <a href="mailto:sales@domskat.ru">sales@domskat.ru</a>
+            </p>
+            <p>Пн.—Пт. 9:00—18:00</p>
+            <p>Сб.—Вс. 10:00—15:00</p>
+        </div>
+    </div>
+{{/if}}
+{{#g-map class="map__g-map-comp" lat=lat lng=lng zoom=zoom as |context|}}
+    {{g-map-marker context lat=lat lng=lng icon=myIcon}}
+{{/g-map}}

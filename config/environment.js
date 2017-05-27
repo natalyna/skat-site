@@ -31,11 +31,13 @@ module.exports = function(environment) {
 			'connect-src': "'self' maps.gstatic.com",
 			'img-src': "'self' *.googleapis.com maps.gstatic.com csi.gstatic.com",
 			'style-src': "'self' 'unsafe-inline' fonts.googleapis.com maps.gstatic.com"
-		},
-		googleMap: {
-			apiKey: "AIzaSyBxO3Sq0_-eaetv7abGpsSun6yaAH-TTQ4"
 		}
 	};
+
+	ENV['g-map'] = {
+		key: "AIzaSyBxO3Sq0_-eaetv7abGpsSun6yaAH-TTQ4",
+		language: 'ru'
+	}
 
 	if (environment === 'development') {
 		// ENV.APP.LOG_RESOLVER = true;

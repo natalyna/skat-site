@@ -135,10 +135,14 @@ label {
 	}
 }
 
-.ember-cli-g-map {
-	height: 710px;
-}
-
 .carousel {
 	overflow: hidden;
+}
+
+.g-map{
+	height: 100%;
+}
+.g-map-canvas {
+	  width: 100%;
+	  height: 100%;
 }

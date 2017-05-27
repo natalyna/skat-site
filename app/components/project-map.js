@@ -16,5 +16,9 @@ export default Ember.Component.extend({
 			var $overlay = this.$(".map__overlay");
 			$overlay.hide();
 		}
+	},
+
+	myIcon: {
+		url: "/assets/images/icons/icon-mappin.svg"
 	}
 });

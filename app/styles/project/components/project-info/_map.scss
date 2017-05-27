@@ -2,6 +2,7 @@
 
 	&__g-map {
 		position: relative;
+		@include size(100%);
 
 		&-comp {
 
@@ -16,5 +17,29 @@
 		z-index: 1000;
 		cursor: pointer;
 		@include size(100%);
+	}
+
+	&__info {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		z-index: 999;
+		background-color: #fff;
+		font-size: 12px;
+
+		&-address,
+		&-office {
+			padding: 20px;
+			padding-right: 80px;
+		}
+
+		&-address {
+			border-bottom: 1px solid #e7e7e7;
+			color: $brand-primary;
+		}
+
+		&-office {
+			padding-bottom: 50px;
+		}
 	}
 }
