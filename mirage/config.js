@@ -18,4 +18,6 @@ export default function() {
 	this.get('/news/:id');
 	this.get('/vacancies');
 	this.get('/vacancies/:id');
+	this.get('/project_sliders');
+	this.get('/tech_sliders');
 }

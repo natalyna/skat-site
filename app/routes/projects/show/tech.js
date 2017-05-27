@@ -2,6 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
 	model(params) {
-		return this.store.findRecord('project', params.project_id);
+		return Ember.RSVP.hash({
+			project: this.store.findRecord('project', params.project_id),
+			techSlider: this.store.findAll('techSlider')
+		});
 	}
 });
