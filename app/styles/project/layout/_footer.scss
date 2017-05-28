@@ -1,7 +1,9 @@
 .footer {
 	font-family: $fontName-SuisseIntlSemiBold, Arial, sans-serif;
+	font-size: 16px;
 	background-color: #e3e5e4;
 	padding: 25px 0;
+	line-height: 1;
 
 	&__link {
 		display: block;
@@ -12,13 +14,27 @@
 		}
 
 		&_big {
-			font-size: 16px;
+			font-family: $fontName-SuisseIntlRegular, Arial, sans-serif;
+			font-size: 26px;
+		}
+	}
+
+	&__btn {
+		margin-top: 28px;
+		font-size: 18px;
+	}
+
+	&__law {
+		padding-top: 51px;
+
+		&-info {
+			margin-top: 18px;
 		}
 	}
 
 	&__copyright {
 		border-top: 1px solid #d6d7d9;
 		padding-top: 20px;
-		margin-top: 20px;
+		margin-top: 28px;
 	}
 }

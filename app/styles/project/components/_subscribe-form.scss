@@ -1,6 +1,7 @@
 .subscribe {
 	&-form {
-		margin-right: 15%;
+		margin-top: 22px;
+		margin-right: 13%;
 	}
 
 	&-header {
@@ -8,6 +9,15 @@
 	}
 
 	&-group {
-		margin-bottom: 15px;
+		margin-bottom: 12px;
+	}
+
+	&-input {
+		height: 46px;
+		padding-top: 5px;
+	}
+
+	&-btn {
+		height: 45px;
 	}
 }
