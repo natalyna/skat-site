@@ -15,9 +15,18 @@
 	&-input {
 		height: 46px;
 		padding-top: 5px;
+
+		@include placeholder {
+			font-family:  $fontName-SuisseIntlRegular, Arial, sans-serif;
+			color: #989EA8;
+		}
 	}
 
 	&-btn {
 		height: 45px;
+	}
+
+	&-text {
+		font-family:  $fontName-SuisseIntlRegular, Arial, sans-serif;
 	}
 }
