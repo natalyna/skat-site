@@ -6,11 +6,15 @@
 	background-color: #e3e5e4;
 	border-bottom: 1px solid #cecfd1;
 	margin-bottom: -25px;
-	padding: 55px 0 80px 0;
+	padding: 26px 0 80px 0;
+
+	&__title {
+			margin-bottom: 30px;
+	}
 
 	&__form {
 		width: 100%;
-
+		
 		&-row {
 			display: table;
 			width: 100%;
@@ -18,7 +22,7 @@
 
 		&-cell {
 			display: table-cell;
-			padding: 0 8px 20px 0;
+			padding: 0 15px 5px 0;
 			vertical-align: top;
 
 			&:last-of-type {
@@ -36,7 +40,10 @@
 	}
 
 	&__add-doc {
-		font-size: 12px;
+		font-size: 13px;
+		margin-top: 5px;
+		margin-left: 9px;
+
 		&-link {
 			border-bottom: 1px dashed $brand-primary;
 		}
