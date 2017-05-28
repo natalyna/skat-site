@@ -7,7 +7,9 @@
             <h2 class="index__projects-title">Проекты</h2> {{projects-grid projects=model.projects}}
             <button class="btn btn-default btn_centered index__projects-btn">Все проекты</button>
         </div>
-        <div class="index__company">
+    </div>
+    <div class="index__company">
+        <div class="container">
             <div class="index__company-layout">
                 <div class="index__company-description text-center">
                     СКАТ&nbsp;&mdash; ведущая строительная компания полного цикла в&nbsp;Республике Коми. С&nbsp;2011 года, применяя передовые градостроительные технологии и&nbsp;инфраструктурный подход, мы&nbsp;создаем проекты высокого архитектурного качества для комфортной жизни многих тысяч семей и&nbsp;развития будущих поколений в&nbsp;современной гармоничной среде.
@@ -52,11 +54,13 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-default btn_centered">О компании</button>
+                <button class="btn btn-default btn_centered index__company-btn">О компании</button>
             </div>
         </div>
+    </div>
+    <div class="container">
         <div class="index__news">
-            <h1>Новости</h1> {{news-grid news=model.news}}
+            <h1 class="index__news-title">Новости</h1> {{news-grid news=model.news}}
         </div>
     </div>
 </div>

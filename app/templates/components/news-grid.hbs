@@ -13,8 +13,8 @@
                     <div class="news-item__text">{{item.label}}</div>
                     <div class="news-item__footer">
                         {{#if item.isAction}}
-                            <span class="badge badge_action">Акция</span>
-                            <small>{{item.expiration}}</small>
+                            <span class="badge badge_action news-item__footer-badge">Акция</span>
+                            <small class="news-item__footer-date">{{item.expiration}}</small>
                         {{/if}}
                     </div>
                 </div>
