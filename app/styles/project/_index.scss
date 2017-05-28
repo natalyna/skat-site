@@ -5,7 +5,15 @@
 
 	&__projects {
 		padding: 0px 40px;
-        margin-top: 70px;
+        margin-top: 86px;
+
+        &-title {
+        	margin-bottom: 30px;	
+        }
+
+        &-btn {
+        	font-size: 18px;
+        }
 	}
 
 	&__company {

@@ -1,60 +1,62 @@
-<div class="index container">
+<div class="index">
     <div class="index__carousel">
         {{bootstrap-carousel}}
     </div>
-    <div class="index__projects">
-        <h1>Проекты</h1> {{projects-grid projects=model.projects}}
-        <button class="btn btn-default btn_centered">Все проекты</button>
-    </div>
-    <div class="index__company">
-        <div class="index__company-layout">
-            <div class="index__company-description text-center">
-            	СКАТ&nbsp;&mdash; ведущая строительная компания полного цикла в&nbsp;Республике Коми. С&nbsp;2011 года, применяя передовые градостроительные технологии и&nbsp;инфраструктурный подход, мы&nbsp;создаем проекты высокого архитектурного качества для комфортной жизни многих тысяч семей и&nbsp;развития будущих поколений в&nbsp;современной гармоничной среде.
-            </div>
-            <div class="row">
-                <div class="col-md-4 text-center">
-                    <div class="index__company-statistic">
-                    	<div class="index__company-number">5</div>
-                    	<div class="index__company-text">Лет опыта в девелопменте</div>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="index__company-statistic">
-                    	<div class="index__company-number">13</div>
-                    	<div class="index__company-text">Реализованных проектов</div>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="index__company-statistic">
-                    	<div class="index__company-number">1&thinsp;500</div>
-                    	<div class="index__company-text">Квартир построено</div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 text-center">
-                    <div class="index__company-statistic">
-                    	<div class="index__company-number">30</div>
-                    	<div class="index__company-text">Гектар земельный банк</div>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="index__company-statistic">
-                    	<div class="index__company-number">500</div>
-                    	<div class="index__company-text">Сотрудников в компании</div>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="index__company-statistic">
-                    	<div class="index__company-number">2&thinsp;000</div>
-                    	<div class="index__company-text">Квартир в стадии строительства</div>
-                    </div>
-                </div>
-            </div>
-            <button class="btn btn-default btn_centered">О компании</button>
+    <div class="container">
+        <div class="index__projects">
+            <h2 class="index__projects-title">Проекты</h2> {{projects-grid projects=model.projects}}
+            <button class="btn btn-default btn_centered index__projects-btn">Все проекты</button>
         </div>
-    </div>
-    <div class="index__news">
-    	<h1>Новости</h1> {{news-grid news=model.news}}
+        <div class="index__company">
+            <div class="index__company-layout">
+                <div class="index__company-description text-center">
+                    СКАТ&nbsp;&mdash; ведущая строительная компания полного цикла в&nbsp;Республике Коми. С&nbsp;2011 года, применяя передовые градостроительные технологии и&nbsp;инфраструктурный подход, мы&nbsp;создаем проекты высокого архитектурного качества для комфортной жизни многих тысяч семей и&nbsp;развития будущих поколений в&nbsp;современной гармоничной среде.
+                </div>
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <div class="index__company-statistic">
+                            <div class="index__company-number">5</div>
+                            <div class="index__company-text">Лет опыта в девелопменте</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="index__company-statistic">
+                            <div class="index__company-number">13</div>
+                            <div class="index__company-text">Реализованных проектов</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="index__company-statistic">
+                            <div class="index__company-number">1&thinsp;500</div>
+                            <div class="index__company-text">Квартир построено</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <div class="index__company-statistic">
+                            <div class="index__company-number">30</div>
+                            <div class="index__company-text">Гектар земельный банк</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="index__company-statistic">
+                            <div class="index__company-number">500</div>
+                            <div class="index__company-text">Сотрудников в компании</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="index__company-statistic">
+                            <div class="index__company-number">2&thinsp;000</div>
+                            <div class="index__company-text">Квартир в стадии строительства</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-default btn_centered">О компании</button>
+            </div>
+        </div>
+        <div class="index__news">
+            <h1>Новости</h1> {{news-grid news=model.news}}
+        </div>
     </div>
 </div>
