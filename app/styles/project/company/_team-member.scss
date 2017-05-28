@@ -1,5 +1,5 @@
 .team-member {
-	margin-top: 50px;
+	margin-bottom: 46px;
 
 	&__image {
 		@include size(370px, 370px);
@@ -7,7 +7,7 @@
 	}
 
 	&__name {
-		margin-top: 20px;
+		margin-top: 12px;
 		font-family: $fontName-SuisseIntlSemiBold, Arial, sans-serif;
 	}
 
@@ -16,10 +16,11 @@
 	}
 
 	&__expand {
-		margin: 20px 0;
+		margin: 35px 0;
+		margin-bottom: 0px;
 		cursor: pointer;
 		background: url($path-images + $path-cross) no-repeat center;
-		@include size(20px);
+		@include size(24px);
 
 		&_close {
 			background: url($path-images + $path-plus) no-repeat center;

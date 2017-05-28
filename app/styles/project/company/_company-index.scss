@@ -1,23 +1,24 @@
 .company {
+	margin-bottom: 15px;
 
 	&__title {
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 	}
 
 	&__introduction {
-		line-height: 1.6;
-		margin-bottom: 30px;
+		margin-bottom: 18px;
+		line-height: 1.35;
 	}
 
 	&__text {
-		margin-bottom: 35px;
+		margin-bottom: 23px;
 	}
 
 	&__cols {
 		display: table;
 		width: 100%;
-		margin-top: 20px;
-		margin-bottom: 70px;
+		margin-top: 17px;
+		margin-bottom: 40px;
 		color: $color-companyCols;
 		font-family: $fontName-SuisseIntlSemiBold, Arial, sans-serif;
 
@@ -28,15 +29,21 @@
 		}
 
 		&-numbers {
-			font-size: 50px;
+			font-size: 65px;
+			margin-bottom: -18px;
 		}
 	}
 
 	&__partners {
-		margin-top: 60px;
+		margin-top: 108px;
+
+		&-title {
+			margin-bottom: 55px;
+		}
+
 		&-logo {
 			@include size(135px, 30px);
-			margin-bottom: 100px;
+			margin-bottom: 70px;
 		}
 	}
 }

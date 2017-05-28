@@ -1,15 +1,15 @@
 @include document-link(".services__item-document");
 
 .services {
-	margin-bottom: 70px;
+	margin-bottom: 65px;
 	
 	&__title {
-		margin-bottom: 40px;
+		margin-bottom: 25px;
 	}
 
 	&__introduction {
-		line-height: 1.6;
-		margin-bottom: 50px;
+		line-height: 1.35;
+		margin-bottom: 60px;
 	}
 
 	&__item {
@@ -29,11 +29,12 @@
 
 		&-info {
 			position: relative;
-			padding: 25px 0 30px 30px;
+			padding: 20px 0 30px 30px;
 		}
 
 		&-title {
-			margin-bottom: 25px;
+			margin: 0;
+			margin-bottom: 15px;
 		}
 
 		&-document {
