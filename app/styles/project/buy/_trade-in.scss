@@ -1,10 +1,15 @@
 .trade-in {
+	margin-bottom: 70px;
+	
 	&__title {
-		font-family: $fontName-SuisseIntlSemiBold, Arial, sans-serif;
-		margin-bottom: 45px;
+		margin-bottom: 30px;
 	}
 
 	&__text {
-		margin-bottom: 35px;
+		margin-bottom: 25px;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
 	}
 }

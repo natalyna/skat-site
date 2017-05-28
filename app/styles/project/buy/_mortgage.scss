@@ -1,25 +1,26 @@
 @include document-link(".mortgage__law-link");
 
 .mortgage {
+	margin-bottom: 90px;
 
 	&__title {
-		margin-bottom: 45px;
-		font-family: $fontName-SuisseIntlSemiBold, Arial, sans-serif;
+		margin-bottom: 33px;
 	}
 
 	&__text {
-		margin-bottom: 35px;
+		margin-bottom: 25px;
 		font-size: 16px;
 	}
 
 	&__cols {
-		margin-top: 150px;
-		margin-bottom: 50px;
+		margin-top: 130px;
+		margin-bottom: 40px;
 		text-align: center;
+		line-height: 1.3;
 
 		&_pos {
 			&_first {
-				padding: 0 35px;
+				padding: 0 25px;
 			}
 
 			&_middle {
@@ -27,7 +28,7 @@
 			}
 
 			&_last {
-				padding: 0 25px;
+				padding: 0 15px;
 			}
 		}
 	}
@@ -35,13 +36,13 @@
 	&__banks {
 		background-color: #cfd3d4;
 		padding: 100px 0 70px 0;
-		margin-bottom: 70px;
+		margin-bottom: 40px;
 	}
 
 	&__bank {
 		background-color: #fff;
-		padding: 30px;
-		padding-right: 80px;
+		padding: 20px;
+		padding-bottom: 17px;
 		margin-bottom: 30px;
 
 		&:hover {
@@ -50,7 +51,7 @@
 		}
 
 		&-logo {
-			margin-bottom: 80px;
+			margin-bottom: 75px;
 			@include size(240px, 50px);
 		}
 
@@ -68,19 +69,14 @@
 		}
 
 		&-numbers {
-			font-size: 20px;
+			font-size: 24px;
 		}
 	}
 
 	&__law {
-		font-family: $fontName-SuisseIntlSemiBold, Arial, sans-serif;
 
 		&-link {
-			margin-top: 35px;
-
-			&:last-of-type {
-				margin-bottom: 110px;
-			}
+			margin-top: 32px;
 		}
 	}
 }

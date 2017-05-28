@@ -1,6 +1,6 @@
 {{#each vacancies as |item|}}
     {{#link-to 'vacancies.show' item.id class="vacancy-item"}}
-        <h4 class="vacancy-item__title">{{item.title}}</h4>
+        <h3 class="vacancy-item__title">{{item.title}}</h3>
         <div class="vacancy-item__date">
             <span class="icons icons_clock"></span>
             <small>{{moment-format item.publDate 'DD MMMM YYYY' 'DD.MM.YYYY'}}</small>

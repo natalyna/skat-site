@@ -1,10 +1,15 @@
 .compensation {
+	margin-bottom: 80px;
+	
 	&__title {
-		font-family: $fontName-SuisseIntlSemiBold, Arial, sans-serif;
-		margin-bottom: 45px;
+		margin-bottom: 33px;
 	}
 
 	&__text {
-		margin-bottom: 35px;
+		margin-bottom: 25px;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
 	}
 }
