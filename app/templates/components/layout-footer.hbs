@@ -4,16 +4,17 @@
             {{#link-to "projects" class="footer__link" }}Проекты{{/link-to}}
             {{#link-to "company" class="footer__link" }}Компания{{/link-to}}
             {{#link-to "news" class="footer__link" }}Новости{{/link-to}}
-            <div class="footer__link">Акции</div>
-            {{#link-to "vacancies" class="footer__link" }}Карьера{{/link-to}}
-            {{#link-to "contacts" class="footer__link" }}Контакты{{/link-to}}
+            {{!-- <div class="footer__link" style="display: none;">Акции</div>
+            {{#link-to "vacancies" class="footer__link" }}
+            Карьера{{/link-to}} --}}
+                {{#link-to "contacts" class="footer__link" }}Контакты{{/link-to}}
         </div>
         <div class="col-md-3">
             {{#link-to "buy" class="footer__link" }}Как купить{{/link-to}}
             {{#link-to "buy.mortgage" class="footer__link" }}Ипотека{{/link-to}}
-            {{#link-to "buy.trade-in" class="footer__link" }}Trade-IN{{/link-to}}
+            {{!-- {{#link-to "buy.trade-in" class="footer__link" }}Trade-IN{{/link-to}} --}}
             {{#link-to "buy.capital" class="footer__link" }}Мат. капитал{{/link-to}}
-            {{#link-to "buy.compensation" class="footer__link" }}Дистанционные продажи{{/link-to}}
+            {{!-- {{#link-to "buy.compensation" class="footer__link" }}Дистанционные продажи{{/link-to}} --}}
         </div>
         <div class="col-md-3">
             <small class="footer__contacts-title">Служба сервиса</small>
@@ -24,7 +25,7 @@
             <small class="footer__contacts-title">Отдел продаж</small>
             <div class="footer__link footer__link_big">+7(8212) 55-12-34</div>
             <a href="mailto:sales@speckat.ru" class="footer__link footer__link_big">sales@speckat.ru</a>
-            <button class="btn btn-primary btn-block footer__btn">Заказать звонок</button>
+            <button class="btn btn-primary btn-block footer__btn" style="display: none;">Заказать звонок</button>
         </div>
     </div>
     <div class="row">
@@ -50,9 +51,8 @@
                 <small>&copy;&nbsp;2012&mdash;2017</small>
             </div>
             <div class="col-md-6">
-                {{social-links}}
-                {{!-- {{scroll-up}} --}}
+                {{!-- {{scroll-up}}
+                --}} </div>
             </div>
         </div>
     </div>
-</div>

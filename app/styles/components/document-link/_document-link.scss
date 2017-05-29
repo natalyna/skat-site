@@ -12,6 +12,10 @@
 			height: 100%;
 			vertical-align: middle;
 			color: $gray-dark;
+
+			&:hover {
+				color: $link-hover-color;
+			}
 		}
 	}
 
