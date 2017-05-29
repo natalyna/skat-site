@@ -16,6 +16,10 @@
 			font-family: $fontName-SuisseIntlRegular, Arial, sans-serif;
 			font-size: 26px;
 		}
+
+		&.active {
+			color: #35353D;
+		}
 	}
 
 	&__btn {
