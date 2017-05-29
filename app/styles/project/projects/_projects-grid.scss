@@ -9,13 +9,19 @@
 		position: relative;
 		color: #fff;
 		margin-bottom: 35px;
+		overflow: hidden;
 
 		&:hover {
 			color: #fff;
+			
+			.projects-item__image {
+				@include transform(scale(1.2));
+			}
+
 		}
 
 		&__image {
-
+			@include transition(all, .5s);
 		}
 
 		&__info {
