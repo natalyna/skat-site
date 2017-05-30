@@ -19,6 +19,6 @@ export default Ember.Component.extend({
 	},
 
 	myIcon: {
-		url: "/assets/images/icons/icon-mappin.svg"
+		url: "/assets/images/icons/icon-pin.svg"
 	}
 });

@@ -66,6 +66,11 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="contacts__map">
+                    {{#g-map class="map__g-map-comp" lat=61.660297 lng=50.8308304 zoom=12 as |context|}}
+                        {{g-map-marker context lat=61.6416075 lng=50.8091675 icon="/assets/images/icons/icon-pin.svg"}}
+                        {{g-map-marker context lat=61.6929542 lng=50.8130206 icon="/assets/images/icons/icon-pin.svg"}}
+                        {{g-map-marker context lat=61.660297 lng=50.8308304 icon="/assets/images/icons/icon-pin.svg"}}
+                    {{/g-map}}
                 </div>
             </div>
         </div>

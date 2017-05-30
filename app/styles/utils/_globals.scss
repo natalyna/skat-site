@@ -127,6 +127,11 @@ label {
 		background: url($path-images + $path-icon-doc) no-repeat center;
 		@include size(72px);
 	}
+
+	&_pin {
+		background: url($path-images + $path-icon-pin-big) no-repeat center;
+		@include size(52px);
+	}
 }
 
 .form-control {
