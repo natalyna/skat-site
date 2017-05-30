@@ -46,6 +46,7 @@
 	}
 
 	&__bank {
+		display: block;
 		background-color: #fff;
 		padding: 20px;
 		padding-bottom: 17px;
@@ -53,7 +54,6 @@
 		@include transition(box-shadow, .4s, ease);
 
 		&:hover {
-			cursor: pointer;
 			@include box-shadow($shadow-mortageBank);
 		}
 
