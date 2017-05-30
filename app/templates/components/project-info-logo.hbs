@@ -1,8 +1,10 @@
-<img class="project-info__logo-image" src="{{logoSrc}}" alt="">
-<div class="project-info__logo-controls">
-    <button class="btn btn-default project-info__logo-btn" type="button">Выбрать квартиру</button>
-    <div class="project-info__logo-address">
-        <span class="project-info__logo-address-pin"></span>
-        <small>{{addressShort}}</small>
+{{#link-to 'projects.show' projectId}}
+    <img class="project-info__logo-image" src="{{logoSrc}}" alt="">
+    <div class="project-info__logo-controls">
+        <button class="btn btn-default project-info__logo-btn" type="button">Выбрать квартиру</button>
+        <div class="project-info__logo-address">
+            <span class="project-info__logo-address-pin"></span>
+            <small>{{addressShort}}</small>
+        </div>
     </div>
-</div>
+{{/link-to}}
