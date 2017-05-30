@@ -10,7 +10,7 @@ export default [{
 	apartmentSize: "от 29 до 190 кв.м",
 	price: "от 990 000",
 	address: "г. Сыктывкар, Октябрьский проспект 204",
-	addressShort: "Октябрьский проспект 204",
+	addressShort: "м-н Орбита",
 	techicalParams: "",
 	location: "",
 	yard: "",
