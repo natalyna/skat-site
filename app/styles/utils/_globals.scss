@@ -60,19 +60,6 @@ label {
 	font-weight: normal;
 }
 
-.btn_centered {
-	display: block;
-	margin: 0 auto;
-}
-
-.btn-default {
-	&:hover {
-		border-color: #031F79;
-		color: #031F79;
-		background: #fff;
-	}
-}
-
 .badge_action {
 	background: #5F259F;
 }
@@ -80,57 +67,39 @@ label {
 .btn {
 	padding-left: 40px;
 	padding-right: 40px;
-}
+	font-family: $fontName-SuisseIntlSemiBold, Arial, sans-serif;
 
-.icons {
-	display: inline-block;
-	@include size(18px);
+	&.btn-default {
+		background: transparent;
 
-	&_virtual-tour {
-		background: url($path-images + $path-icon-virtual-tour) no-repeat center;
-		@include size(24px);
+		&:hover {
+			border-color: #031F79;
+			color: #031F79;
+		}
 	}
 
-	&_camera {
-		background: url($path-images + $path-icon-camera) no-repeat center;
-		@include size(24px);
+	&.btn_carousel {
+		background-color: transparent;
+		border-color: rgba(255, 255, 255, 0.5);
+		color: #fff;
+
+		&:hover {
+			border-color: rgba(255, 255, 255, 1);
+		}
 	}
 
-	&_clock {
-		background: url($path-images + $path-icon-clock) no-repeat center;
-		vertical-align: top;
-		margin-right: 6px;
+	&.btn_fill {
+		background-color: #fff;
+		border-color: none;
+
+		&:hover {
+			color: #031F79;
+		}
 	}
 
-	&_pdf-medium {
-		background: url($path-images + $path-icon-pdf-medium) no-repeat center;
-		@include size(18px, 24px);
-	}
-
-	&_download {
-		background: url($path-images + $path-icon-download) no-repeat center;
-		@include size(20px);
-		vertical-align: middle;
-	}
-
-	&_coin {
-		background: url($path-images + $path-icon-coin) no-repeat center;
-		@include size(72px);
-	}
-
-	&_watch {
-		background: url($path-images + $path-icon-watch) no-repeat center;
-		@include size(72px);
-	}
-
-	&_doc {
-		background: url($path-images + $path-icon-doc) no-repeat center;
-		@include size(72px);
-	}
-
-	&_pin {
-		background: url($path-images + $path-icon-pin-big) no-repeat center;
-		@include size(52px);
+	&.btn_centered {
+		display: block;
+		margin: 0 auto;
 	}
 }
 
@@ -138,6 +107,7 @@ label {
 	@include box-shadow(none);
 
 	&:focus {
+		border-width: 2px;
 		@include box-shadow(none);
 	}
 }

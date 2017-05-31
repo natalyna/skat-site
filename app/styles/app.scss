@@ -12,7 +12,7 @@ $link-hover-decoration: none;
 // Typography:
 $line-height-base: 1.5;
 $font-size-base: 16px;
-$font-size-h1: 40px;
+$font-size-h1: 42px;
 $font-size-h2: 32px;
 $font-size-h3: 24px;
 $font-size-h4: 16px;
@@ -24,7 +24,7 @@ $btn-default-color: $brand-primary;
 
 // Forms:
 $input-border: transparent;
-$input-border-focus: #79aed6;
+$input-border-focus: #69b3e7;
 
 // Navs:
 $nav-link-hover-bg: transparent;
@@ -36,6 +36,10 @@ $nav-tabs-link-hover-border-color: transparent;
 $nav-tabs-active-link-hover-bg: #fff;
 $nav-tabs-active-link-hover-color: #fff;
 $nav-tabs-active-link-hover-border-color: transparent;
+
+// Labels
+$label-success-bg: #ff3939;
+$label-danger-bg: #00cd73;
 
 // Badges:
 $badge-border-radius: 4px;

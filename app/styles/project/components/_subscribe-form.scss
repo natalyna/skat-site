@@ -15,9 +15,9 @@
 	&-input {
 		height: 46px;
 		padding-top: 5px;
+		font-family:  $fontName-SuisseIntlRegular, Arial, sans-serif;
 
 		@include placeholder {
-			font-family:  $fontName-SuisseIntlRegular, Arial, sans-serif;
 			color: #989EA8;
 		}
 	}
