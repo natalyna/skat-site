@@ -1,6 +1,5 @@
 {
   "name": "skat-site",
   "dependencies": {
-    "seiyria-bootstrap-slider": "~6.0.6"
   }
 }
