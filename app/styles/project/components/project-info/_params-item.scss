@@ -15,9 +15,9 @@
 	}
 
 	&__image {
-		height: 320px;
 
 		img {
+			height: 320px;
 			background-color: #f2f2f2;
 			@include size(100%);
 		}

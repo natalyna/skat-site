@@ -1,16 +1,7 @@
 export default [{
-	imgSrc: "/assets/images/projects/slider-atlantida@2x.png",
-	imgAlt: "Atlantida slider"
+	imgSrc: "/assets/images/projects/atlantida/yard/atlantida-yard-night-01@2x.jpg",
+	imgAlt: "Atlantida night"
 }, {
-	imgSrc: "/assets/images/projects/news-atlantida@2x.png",
-	imgAlt: "Atlantida slider"
-}, {
-	imgSrc: "/assets/images/projects/project-cover-atlantida@2x.png",
-	imgAlt: "Atlantida slider"
-}, {
-	imgSrc: "/assets/images/projects/news-atlantida@2x.png",
-	imgAlt: "Atlantida slider"
-}, {
-	imgSrc: "/assets/images/projects/project-cover-atlantida@2x.png",
-	imgAlt: "Atlantida slider"
+	imgSrc: "/assets/images/projects/atlantida/yard/atlantida-yard-night-02@2x.jpg",
+	imgAlt: "Atlantida night"
 }];

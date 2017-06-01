@@ -3,47 +3,34 @@
 	&__item {
 		display: block;
 		position: relative;
-		padding: 25px;
-		padding-top: 20px;
 		margin-bottom: 30px;
 		background-color: #f2f2f2;
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
+		overflow: hidden;
 		@include size(100%, 320px);
 
-		&_tech {
-			background-image: url(/assets/images/projects/atlantida/atlantida-tech@2x.png);
-		}
+		&:hover,
+		&:focus {
 
-		&_location {
-			background-image: url(/assets/images/projects/atlantida/atlantida-location@2x.png);
-		}
-
-		&_yard {
-			background-image: url(/assets/images/projects/atlantida/atlantida-yard@2x.png);
-		}
-
-		&_mortgage {
-			background-image: url(/assets/images/projects/atlantida/atlantida-mortgage@2x.png);
-		}
-
-		&-layout {
-			position: absolute;
-			top: 0;
-			left: 0;
-			background-color: rgba(0, 0, 0, 0.25);
-			@include size(100%);
-
-			&:hover {
-				cursor: pointer;
-				background-color: rgba(0, 0, 0, 0.5);
+			.params__item-img {
+				@include transform(scale(1.2));
 			}
 		}
 
 		&-title {
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 25px;
+			padding-top: 20px;
 			font-size: 22px;
 			color: #fff;
+			background-color: rgba(0, 0, 0, 0.25);
+			@include size(100%);
+		}
+
+		&-img {
+			@include size(100%);
+			@include transition(all, .5s);
 		}
 	}
 

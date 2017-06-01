@@ -1,6 +1,6 @@
 <div class="tabs">
     <div class="tabs__links">
-{{!--         <a href="#" class="tabs__link">
+        {{!--         <a href="#" class="tabs__link">
             <span class="icons icons_virtual-tour"></span>
             <span class="tabs__link-text">Виртуальный тур</span>
         </a> --}}
@@ -10,11 +10,11 @@
         </a>
     </div>
     <ul class="nav nav-tabs tabs__nav" role="tablist">
-        <li role="presentation" class="active"><a href="#building" aria-controls="building" role="tab" data-toggle="tab">Ход строительства</a></li>
-        <li role="presentation"><a href="#news" aria-controls="news" role="tab" data-toggle="tab">Новости проекта</a></li>
+        {{!-- <li role="presentation" class="active"><a href="#building" aria-controls="building" role="tab" data-toggle="tab">Ход строительства</a></li> --}}
+        <li role="presentation" class="active"><a href="#news" aria-controls="news" role="tab" data-toggle="tab">Новости проекта</a></li>
     </ul>
     <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="building">
+{{!--         <div role="tabpanel" class="tab-pane active" id="building">
             <div class="gallery">
                 <div class="row">
                     <div class="col-md-4">
@@ -43,49 +43,49 @@
                     </div>
                 </div>
             </div>
-            <div class="data">
-                <div class="row">
-                    <div class="col-md-2">
-                        <div class="data__item">
-                            <div class="data__item-title">Количество домов</div>
-                            <div class="data__item-value">{{buildingCount}}</div>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="data__item">
-                            <div class="data__item-title">Количество квартир</div>
-                            <div class="data__item-value">{{flatCount}}</div>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="data__item">
-                            <div class="data__item-title">Этажность</div>
-                            <div class="data__item-value">{{floorCount}}</div>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="data__item">
-                            <div class="data__item-title">Количество комнат</div>
-                            <div class="data__item-value">{{roomCount}}</div>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="data__item">
-                            <div class="data__item-title">Площадь квартир</div>
-                            <div class="data__item-value">{{apartmentSize}}</div>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="data__item">
-                            <div class="data__item-title">Цена</div>
-                            <div class="data__item-value">{{price}}</div>
-                        </div>
-                    </div>
+        </div> --}}
+        <div role="tabpanel" class="tab-pane active" id="news">
+            Новости проекта
+        </div>
+    </div>
+    <div class="data">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="data__item">
+                    <div class="data__item-title">Количество домов</div>
+                    <div class="data__item-value">{{buildingCount}}</div>
                 </div>
             </div>
-        </div>
-        <div role="tabpanel" class="tab-pane" id="news">
-            Tab 2
+            <div class="col-md-2">
+                <div class="data__item">
+                    <div class="data__item-title">Количество квартир</div>
+                    <div class="data__item-value">{{flatCount}}</div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="data__item">
+                    <div class="data__item-title">Этажность</div>
+                    <div class="data__item-value">{{floorCount}}</div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="data__item">
+                    <div class="data__item-title">Количество комнат</div>
+                    <div class="data__item-value">{{roomCount}}</div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="data__item">
+                    <div class="data__item-title">Площадь квартир</div>
+                    <div class="data__item-value">{{apartmentSize}}</div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="data__item">
+                    <div class="data__item-title">Цена</div>
+                    <div class="data__item-value">{{price}}</div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
