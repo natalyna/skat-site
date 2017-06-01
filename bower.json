@@ -1,7 +1,6 @@
 {
   "name": "skat-site",
   "dependencies": {
-    "seiyria-bootstrap-slider": "~6.0.6",
-    "gmaps-for-apps": "^0.5.15"
+    "seiyria-bootstrap-slider": "~6.0.6"
   }
 }
